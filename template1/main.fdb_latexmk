@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex main"] 1737690928.39975 "main.aux" "main.bbl" "main" 1737690986.10487 0
+["bibtex main"] 1737828943.1422 "main.aux" "main.bbl" "main" 1737828943.76284 0
   "./sbc-template.bib" 1737690917.92222 724 418bff9cd1ab003737f69f69e5306b63 ""
   "./sbc.bst" 1737690917.91546 21863 e2f961827e28074ef5a2bc27ccb7b310 ""
-  "main.aux" 1737690985.94528 1907 98eff09c710d46e138a303c0144c7b40 "pdflatex"
+  "main.aux" 1737828943.56709 1907 26aa87b2d8de6a2563a4d3dc3bb135f4 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1737690985.63501 "/Users/luisfelipesena/Development/UFBA/ufba-latex/template1/main.tex" "main.pdf" "main" 1737690986.10497 0
-  "/Users/luisfelipesena/Development/UFBA/ufba-latex/template1/main.tex" 1737690917.93031 6950 242c7bb91c4f7c6a4a587df87c98dca3 ""
+["pdflatex"] 1737828943.22225 "/Users/luisfelipesena/Development/UFBA/ufba-latex/template1/main.tex" "main.pdf" "main" 1737828943.76301 0
+  "/Users/luisfelipesena/Development/UFBA/ufba-latex/template1/main.tex" 1737828942.38148 6979 9caf272a038874ebf0cda242fcfd5392 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1136768653 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -84,9 +84,9 @@
   "caption2.sty" 1737690917.9388 15189 50845fba222dc25666abc3397b231fab ""
   "fig1.jpg" 1737690917.93643 39933 79da1f77b4599c71378d76c4aec374c6 ""
   "fig2.jpg" 1737690917.93402 22945 a28e60c395d91384d9e32be051b6cd94 ""
-  "main.aux" 1737690985.94528 1907 98eff09c710d46e138a303c0144c7b40 "pdflatex"
-  "main.bbl" 1737690928.4793 660 5c5030543fc020b71f2ca68974f5e327 "bibtex main"
-  "main.tex" 1737690917.93031 6950 242c7bb91c4f7c6a4a587df87c98dca3 ""
+  "main.aux" 1737828943.56709 1907 26aa87b2d8de6a2563a4d3dc3bb135f4 "pdflatex"
+  "main.bbl" 1737828943.22081 660 5c5030543fc020b71f2ca68974f5e327 "bibtex main"
+  "main.tex" 1737828942.38148 6979 9caf272a038874ebf0cda242fcfd5392 ""
   "sbc-template.sty" 1737690917.91928 5280 0a277450ee6cfc82a68e4b0b0f92e15e ""
   "table.jpg" 1737690917.90323 50466 e26ebe2ae26ae6e4a5f0aceac1320ded ""
   (generated)
