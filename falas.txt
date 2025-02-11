@@ -1,0 +1,68 @@
+=== APRESENTAÇÃO: IMPLEMENTAÇÃO DO ALGORITMO DE CHANDY-LAMPORT ===
+Tempo total: 10 minutos
+
+[Slide 1: Introdução - 1 min]
+"Bom dia a todos. Hoje vou apresentar minha implementação do algoritmo de Snapshot Distribuído de Chandy-Lamport. Este algoritmo é fundamental em sistemas distribuídos para capturar estados globais consistentes sem interromper a execução do sistema."
+
+[Slide 2: Motivação - 1 min]
+"O desafio em sistemas distribuídos é capturar um estado global consistente quando não temos um relógio global e as mensagens podem ter atrasos arbitrários. O algoritmo de Chandy-Lamport resolve este problema de forma elegante usando mensagens especiais chamadas markers."
+
+[Slide 3: Conceitos Fundamentais - 1.5 min]
+"Nossa implementação se baseia em três conceitos principais:
+1. Estados locais dos processos
+2. Mensagens em trânsito nos canais
+3. Markers para coordenação
+
+O algoritmo garante que o snapshot capturado é consistente, mantendo a causalidade das mensagens e não interferindo na execução normal do sistema."
+
+[Slide 4: Implementação - 2 min]
+"Implementamos o sistema em Python usando:
+- Threads para simular processos distribuídos
+- Queues para canais de comunicação
+- Locks para sincronização
+- Sistema de logging para análise
+
+A classe Process é o coração da implementação, gerenciando:
+- Estado local
+- Canais de comunicação
+- Gravação de mensagens
+- Coordenação via markers"
+
+[Slide 5: Demonstração de Logs - 2 min]
+"Vamos ver o algoritmo em ação através dos logs:
+1. P0 inicia o snapshot com estado 61
+2. Envia markers para P1 e P2
+3. P1 recebe marker, grava estado 47
+4. P2 recebe marker, grava estado 35
+5. Mensagens em trânsito são capturadas
+
+Os logs mostram claramente a propagação dos markers e a captura consistente do estado global."
+
+[Slide 6: Análise de Corretude - 1.5 min]
+"Nossa implementação satisfaz as propriedades fundamentais:
+- Terminação em tempo finito
+- Consistência do estado global
+- Não-interferência com a execução normal
+- Captura correta de mensagens em trânsito
+
+Os resultados validam que o algoritmo funciona conforme especificado no artigo original."
+
+[Slide 7: Conclusão - 1 min]
+"Em conclusão, nossa implementação demonstra com sucesso:
+- A eficácia do algoritmo de Chandy-Lamport
+- A captura consistente de estados globais
+- A coordenação eficiente entre processos
+- A praticidade do Python para sistemas distribuídos
+
+Obrigado pela atenção. Alguma pergunta?"
+
+=== DICAS PARA APRESENTAÇÃO ===
+
+1. Mantenha o ritmo constante
+2. Use os logs como exemplo prático
+3. Enfatize os aspectos técnicos da implementação
+4. Esteja preparado para perguntas sobre:
+   - Escolha do Python
+   - Mecanismo de markers
+   - Garantias de consistência
+   - Desafios na implementação 

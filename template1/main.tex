@@ -24,158 +24,195 @@
      
 \sloppy
 
-\title{Instructions for Authors of SBC Conferences\\ Papers and Abstracts}
-
-\author{Luciana P. Nedel\inst{1}, Rafael H. Bordini\inst{2}, Flávio Rech
-  Wagner\inst{1}, Jomi F. Hübner\inst{3} }
-
-
-\address{Instituto de Informática -- Universidade Federal do Rio Grande do Sul
-  (UFRGS)\\
-  Caixa Postal 15.064 -- 91.501-970 -- Porto Alegre -- RS -- Brazil
-\nextinstitute
-  Department of Computer Science -- University of Durham\\
-  Durham, U.K.
-\nextinstitute
-  Departamento de Sistemas e Computação\\
-  Universidade Regional de Blumenal (FURB) -- Blumenau, SC -- Brazil
-  \email{\{nedel,flavio\}@inf.ufrgs.br, R.Bordini@durham.ac.uk,
-  jomi@inf.furb.br}
+\title{Implementação e Análise do Algoritmo de Snapshot Distribuído de Chandy-Lamport}
+\author{Luis Felipe Sena}
+\address{Universidade Federal da Bahia (UFBA)\\
+Salvador -- BA -- Brazil
 }
 
 \begin{document} 
-
 \maketitle
 
 \begin{abstract}
-  This meta-paper describes the style to be used in articles and short papers
-  for SBC conferences. For papers in English, you should add just an abstract
-  while for the papers in Portuguese, we also ask for an abstract in
-  Portuguese (``resumo''). In both cases, abstracts should not have more than
-  10 lines and must be in the first page of the paper.
+This paper presents a Python implementation and analysis of the Chandy-Lamport distributed snapshot algorithm. The implementation simulates a distributed system with three processes communicating through bidirectional channels, demonstrating the algorithm's ability to capture consistent global states. We discuss the implementation details, challenges encountered, and provide a thorough analysis of the algorithm's behavior through detailed logging and state tracking.
 \end{abstract}
-     
-\begin{resumo} 
-  Este meta-artigo descreve o estilo a ser usado na confecção de artigos e
-  resumos de artigos para publicação nos anais das conferências organizadas
-  pela SBC. É solicitada a escrita de resumo e abstract apenas para os artigos
-  escritos em português. Artigos em inglês deverão apresentar apenas abstract.
-  Nos dois casos, o autor deve tomar cuidado para que o resumo (e o abstract)
-  não ultrapassem 10 linhas cada, sendo que ambos devem estar na primeira
-  página do artigo.
+
+\begin{resumo}
+Este artigo apresenta uma implementação em Python e análise do algoritmo de snapshot distribuído de Chandy-Lamport. A implementação simula um sistema distribuído com três processos comunicando-se através de canais bidirecionais, demonstrando a capacidade do algoritmo de capturar estados globais consistentes. Discutimos os detalhes da implementação, desafios encontrados e fornecemos uma análise completa do comportamento do algoritmo através de logs detalhados e rastreamento de estados.
 \end{resumo}
 
+\begin{keywords}
+Sistemas Distribuídos, Algoritmo de Chandy-Lamport, Snapshot Distribuído, Estados Globais Consistentes.
+\end{keywords}
 
-\section{General Information}
+\section{Introdução}
 
-All full papers and posters (short papers) submitted to some SBC conference,
-including any supporting documents, should be written in English or in
-Portuguese. The format paper should be A4 with single column, 3.5 cm for upper
-margin, 2.5 cm for bottom margin and 3.0 cm for lateral margins, without
-headers or footers. The main font must be Times, 12 point nominal size, with 6
-points of space before each paragraph. Page numbers must be suppressed.
+O algoritmo de snapshot distribuído de Chandy-Lamport \cite{chandy1985distributed} é fundamental para a determinação de estados globais consistentes em sistemas distribuídos. Este trabalho apresenta uma implementação prática do algoritmo, demonstrando sua eficácia na captura de estados globais consistentes em um ambiente simulado com três processos. A importância deste algoritmo reside na sua capacidade de capturar estados consistentes sem interromper a execução normal do sistema distribuído, permitindo debug, checkpointing e análise de propriedades globais.
 
-Full papers must respect the page limits defined by the conference.
-Conferences that publish just abstracts ask for \textbf{one}-page texts.
+\section{Fundamentação Teórica}
 
-\section{First Page} \label{sec:firstpage}
+O algoritmo de Chandy-Lamport baseia-se em dois conceitos principais:
+\begin{itemize}
+    \item Captura do estado local de cada processo
+    \item Registro de mensagens em trânsito nos canais de comunicação
+\end{itemize}
 
-The first page must display the paper title, the name and address of the
-authors, the abstract in English and ``resumo'' in Portuguese (``resumos'' are
-required only for papers written in Portuguese). The title must be centered
-over the whole page, in 16 point boldface font and with 12 points of space
-before itself. Author names must be centered in 12 point font, bold, all of
-them disposed in the same line, separated by commas and with 12 points of
-space after the title. Addresses must be centered in 12 point font, also with
-12 points of space after the authors' names. E-mail addresses should be
-written using font Courier New, 10 point nominal size, with 6 points of space
-before and 6 points of space after.
+Um estado global consistente deve satisfazer a propriedade fundamental de que, se uma mensagem é registrada como recebida em um estado local de destino, ela deve também ter sido registrada como enviada no estado local da origem. Esta propriedade é garantida pelo algoritmo através do uso estratégico de markers e do protocolo de gravação de mensagens.
 
-The abstract and ``resumo'' (if is the case) must be in 12 point Times font,
-indented 0.8cm on both sides. The word \textbf{Abstract} and \textbf{Resumo},
-should be written in boldface and must precede the text.
+O algoritmo utiliza mensagens especiais chamadas "markers" para coordenar a captura do estado global, garantindo a consistência do snapshot através de três regras fundamentais:
 
-\section{CD-ROMs and Printed Proceedings}
+\begin{enumerate}
+    \item Um processo registra seu estado local ao receber o primeiro marker
+    \item O processo então propaga markers para todos os outros processos
+    \item O processo começa a registrar mensagens recebidas em cada canal até receber um marker naquele canal
+\end{enumerate}
 
-In some conferences, the papers are published on CD-ROM while only the
-abstract is published in the printed Proceedings. In this case, authors are
-invited to prepare two final versions of the paper. One, complete, to be
-published on the CD and the other, containing only the first page, with
-abstract and ``resumo'' (for papers in Portuguese).
+\subsection{Propriedades de Consistência}
 
-\section{Sections and Paragraphs}
+O algoritmo garante as seguintes propriedades:
 
-Section titles must be in boldface, 13pt, flush left. There should be an extra
-12 pt of space before each title. Section numbering is optional. The first
-paragraph of each section should not be indented, while the first lines of
-subsequent paragraphs should be indented by 1.27 cm.
+\begin{itemize}
+    \item \textbf{Consistência Causal:} Se um evento e1 causalmente precede um evento e2, e e2 está no snapshot, então e1 também está no snapshot
+    \item \textbf{Atomicidade:} O snapshot é registrado de forma atômica, mesmo que os processos capturem seus estados em momentos diferentes
+    \item \textbf{Não-Interferência:} O processo de snapshot não interfere na execução normal do sistema
+\end{itemize}
 
-\subsection{Subsections}
+\section{Implementação}
 
-The subsection titles must be in boldface, 12pt, flush left.
+\subsection{Estrutura do Sistema}
 
-\section{Figures and Captions}\label{sec:figs}
+Nossa implementação utiliza Python com as seguintes características principais:
 
+\begin{itemize}
+    \item Processos implementados como threads independentes usando a biblioteca threading
+    \item Canais de comunicação bidirecionais usando Queue do módulo queue
+    \item Estados locais representados por números inteiros aleatórios (1-100)
+    \item Sistema de logging detalhado usando o módulo logging do Python
+\end{itemize}
 
-Figure and table captions should be centered if less than one line
-(Figure~\ref{fig:exampleFig1}), otherwise justified and indented by 0.8cm on
-both margins, as shown in Figure~\ref{fig:exampleFig2}. The caption font must
-be Helvetica, 10 point, boldface, with 6 points of space before and after each
-caption.
+\subsection{Componentes Principais}
 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=.5\textwidth]{fig1.jpg}
-\caption{A typical figure}
-\label{fig:exampleFig1}
-\end{figure}
+\subsubsection{Classe Process}
 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=.3\textwidth]{fig2.jpg}
-\caption{This figure is an example of a figure caption taking more than one
-  line and justified considering margins mentioned in Section~\ref{sec:figs}.}
-\label{fig:exampleFig2}
-\end{figure}
+A classe Process implementa a lógica principal do algoritmo:
 
-In tables, try to avoid the use of colored or shaded backgrounds, and avoid
-thick, doubled, or unnecessary framing lines. When reporting empirical data,
-do not use more decimal digits than warranted by their precision and
-reproducibility. Table caption must be placed before the table (see Table 1)
-and the font used must also be Helvetica, 10 point, boldface, with 6 points of
-space before and after each caption.
+\begin{itemize}
+    \item \textbf{Gerenciamento de Estado:}
+        \begin{itemize}
+            \item Estado local (self.state)
+            \item Estado do snapshot (self.snapshot\_state)
+            \item Conjunto de canais em gravação (self.recording\_channels)
+        \end{itemize}
+    \item \textbf{Controle de Execução:}
+        \begin{itemize}
+            \item Thread control (self.running)
+            \item Locks para sincronização (self.lock)
+            \item Eventos para coordenação (self.snapshot\_completed)
+        \end{itemize}
+    \item \textbf{Manipulação de Mensagens:}
+        \begin{itemize}
+            \item Processamento de markers
+            \item Gravação de mensagens em trânsito
+            \item Gerenciamento de canais de comunicação
+        \end{itemize}
+\end{itemize}
 
-\begin{table}[ht]
-\centering
-\caption{Variables to be considered on the evaluation of interaction
-  techniques}
-\label{tab:exTable1}
-\includegraphics[width=.7\textwidth]{table.jpg}
-\end{table}
+\subsubsection{Sistema de Comunicação}
 
-\section{Images}
+O sistema de comunicação é implementado usando:
 
-All images and illustrations should be in black-and-white, or gray tones,
-excepting for the papers that will be electronically available (on CD-ROMs,
-internet, etc.). The image resolution on paper should be about 600 dpi for
-black-and-white images, and 150-300 dpi for grayscale images.  Do not include
-images with excessive resolution, as they may take hours to print, without any
-visible difference in the result. 
+\begin{itemize}
+    \item \textbf{Queue:} Implementa canais FIFO assíncronos
+    \item \textbf{Mensagens:} Tuplas (tipo, conteúdo) onde tipo pode ser 'msg' ou 'marker'
+    \item \textbf{Delays:} random.uniform(0.1, 0.3) para simular latência de rede realista
+    \item \textbf{Controle de Concorrência:} Locks para acesso seguro a recursos compartilhados
+\end{itemize}
 
-\section{References}
+\subsection{Mecanismo de Snapshot}
 
-Bibliographic references must be unambiguous and uniform.  We recommend giving
-the author names references in brackets, e.g. \cite{knuth:84},
-\cite{boulic:91}, and \cite{smith:99}.
+O processo de snapshot segue as seguintes etapas:
 
-The references must be listed using 12 point font size, with 6 points of space
-before each reference. The first line of each reference should not be
-indented, while the subsequent should be indented by 0.5 cm.
+\begin{enumerate}
+    \item \textbf{Iniciação:}
+        \begin{itemize}
+            \item Processo iniciador grava seu estado
+            \item Inicia gravação em todos os canais
+            \item Envia markers para todos os processos
+        \end{itemize}
+    \item \textbf{Propagação:}
+        \begin{itemize}
+            \item Processos gravam estado ao receber primeiro marker
+            \item Propagam markers para outros processos
+            \item Iniciam gravação em canais sem marker
+        \end{itemize}
+    \item \textbf{Finalização:}
+        \begin{itemize}
+            \item Processos param de gravar canal ao receber marker
+            \item Reportam snapshot quando todos os canais receberam markers
+        \end{itemize}
+\end{enumerate}
 
-A tese do garotinho
+\section{Análise dos Resultados}
 
-- asas
+\subsection{Comportamento do Sistema}
 
+A análise dos logs demonstra o funcionamento correto do algoritmo:
+
+\begin{verbatim}
+[INÍCIO] P0 iniciou snapshot com estado local = 61
+[MARKER] P0 -> P1
+[MARKER] P0 -> P2
+\end{verbatim}
+
+O processo P0 inicia o snapshot e propaga markers:
+
+\begin{verbatim}
+[MARKER] P1 recebeu primeiro marker de P0
+[SNAPSHOT] P1 gravou estado local = 47
+[MARKER] P1 -> P2
+\end{verbatim}
+
+\subsection{Captura de Estados}
+
+Os estados locais capturados foram:
+\begin{itemize}
+    \item P0: 61
+    \item P1: 47
+    \item P2: 35
+\end{itemize}
+
+\subsection{Mensagens em Trânsito}
+
+O sistema capturou corretamente as mensagens em trânsito:
+
+\begin{verbatim}
+[CAPTURA] P1 gravou mensagem do canal P2: MSG from 1
+[CAPTURA] P0 gravou mensagem do canal P1: MSG from 0
+\end{verbatim}
+
+\subsection{Análise de Corretude}
+
+A implementação satisfaz as propriedades fundamentais do algoritmo:
+
+\begin{itemize}
+    \item \textbf{Terminação:} O algoritmo termina em tempo finito, com todos os processos completando seus snapshots
+    \item \textbf{Consistência:} O estado global capturado é consistente, preservando a causalidade das mensagens
+    \item \textbf{Não-Bloqueio:} Os processos continuam sua execução normal durante o snapshot
+\end{itemize}
+
+\section{Conclusão}
+
+A implementação demonstrou com sucesso os principais aspectos do algoritmo de Chandy-Lamport:
+\begin{itemize}
+    \item Captura consistente de estados locais
+    \item Registro preciso de mensagens em trânsito
+    \item Coordenação eficiente entre processos
+    \item Terminação adequada do algoritmo
+\end{itemize}
+
+Os resultados obtidos validam a eficácia do algoritmo na captura de estados globais consistentes em sistemas distribuídos. A implementação em Python demonstrou ser uma escolha adequada, oferecendo as ferramentas necessárias para simular um ambiente distribuído e implementar o algoritmo de forma clara e eficiente.
+
+\renewcommand{\refname}{Referências}
 \bibliographystyle{sbc}
 \bibliography{sbc-template}
 

@@ -1,0 +1,89 @@
+ROTEIRO DE APRESENTAÇÃO - INTELIGÊNCIA ARTIFICIAL DISTRIBUÍDA (15 minutos)
+
+PARTE 1 - LUIS FELIPE (7 minutos)
+--------------------------------
+
+[Slide Título] (30s)
+- Bom dia/Boa tarde a todos
+- Apresentação do tema e sua relevância no contexto atual
+- Breve introdução sobre a importância da IAD em sistemas modernos
+
+[Slide Introdução] (1min)
+- A IAD surge como uma interseção crucial entre IA e sistemas distribuídos
+- Explicar como a complexidade dos problemas atuais demanda soluções distribuídas
+- Destacar a necessidade de cooperação entre múltiplos agentes
+
+[Slide Classificação da IA] (1min)
+- Apresentar a imagem da classificação
+- Explicar os dois eixos principais: método de solução e localização espacial
+- Focar na distinção entre abordagens monolíticas e distribuídas
+
+[Slide Conceitos Fundamentais] (1.5min)
+- Detalhar o conceito de agentes e suas características principais:
+  * Autonomia: capacidade de tomar decisões independentes
+  * Inteligência: habilidade de aprender e se adaptar
+  * Mobilidade: capacidade de migrar entre sistemas
+  * Comunicação: interação com outros agentes
+
+[Slide Abordagens Principais] (2min)
+- Explicar as duas principais abordagens:
+  * RDP (Resolução Distribuída de Problemas)
+    - Abordagem top-down
+    - Como funciona a decomposição de problemas
+  * Sistemas Multiagentes
+    - Abordagem bottom-up
+    - Importância da interação social entre agentes
+
+[Slide Arquiteturas] (1min)
+- Finalizar apresentando as arquiteturas fundamentais:
+  * Blackboard: conceito de espaço compartilhado
+  * ParaNet: organização em camadas e tratamento de inconsistências
+
+PARTE 2 - JOÃO (7 minutos)
+--------------------------
+
+[Slide Desafios e Soluções] (1.5min)
+- Apresentar os principais desafios:
+  * Complexidade de coordenação
+  * Tratamento de inconsistências
+  * Comunicação eficiente
+- Explicar as soluções propostas para cada desafio
+
+[Slide Tendências e Futuro] (1.5min)
+- Discutir as principais tendências:
+  * Aprendizado de Máquina Distribuído
+  * Sistemas Multiagentes Autônomos
+  * IoT e Edge Computing
+  * Integração com novas tecnologias (5G, Blockchain)
+
+[Slide Aplicações do Mundo Real] (1.5min)
+- Apresentar casos práticos:
+  * Ensino a Distância
+  * E-commerce
+  * Sistemas de Manufatura
+  * Exploração Espacial (NASA)
+  * Sistemas de Saúde (HipNav)
+
+[Slide Infraestrutura Moderna] (1.5min)
+- Explicar os componentes modernos:
+  * Containerização (Kubernetes, Docker)
+  * Message Brokers (Kafka, RabbitMQ)
+  * Armazenamento e Cache distribuídos
+
+[Slide Conclusão] (1min)
+- Resumir os pontos principais
+- Destacar a importância crescente da IAD
+- Mencionar perspectivas futuras
+- Agradecer a atenção
+
+DICAS GERAIS:
+------------
+- Manter contato visual com a audiência
+- Falar em um ritmo adequado e claro
+- Usar as mãos para gestos naturais
+- Demonstrar domínio e entusiasmo pelo tema
+- Estar preparado para possíveis perguntas sobre:
+  * Diferenças entre IA tradicional e IAD
+  * Desafios práticos de implementação
+  * Tendências futuras do campo
+  * Aplicações específicas em diferentes setores 
