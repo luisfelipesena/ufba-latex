@@ -12,7 +12,7 @@ O sistema é composto por:
 - 3 processos (P0, P1, P2) executando como threads
 - Canais de comunicação bidirecionais entre todos os processos
 - Mensagens assíncronas com delays aleatórios
-- Estado local de cada processo representado por um número inteiro aleatório
+- Estado local de cada processo representado por um número inteiro aleatório.
 
 ### 2.2 Componentes Principais
 
