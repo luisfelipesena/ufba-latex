@@ -1,0 +1,345 @@
+\documentclass[12pt, a4paper]{report}
+\usepackage[top=3cm,left=3cm,right=2cm,bottom=2cm]{geometry}
+\linespread{1.3}
+\setlength{\parindent}{1.25cm}
+\usepackage{indentfirst}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{multicol}
+\usepackage[normalem]{ulem}
+\usepackage{wrapfig}
+\usepackage{caption}
+\usepackage{fancybox}
+\usepackage[pdfstartview=FitH]{hyperref}
+\usepackage{subfigure}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{siunitx}
+\usepackage{rotating}
+\usepackage{booktabs}
+\usepackage[table]{xcolor}
+\usepackage{array}
+\usepackage{colortbl}
+
+\graphicspath{{Figuras/}}
+
+\renewcommand{\theenumii}{\alph{enumii}}
+\DeclareMathOperator{\sen}{sen}
+\DeclareMathOperator{\tg}{tg}
+\DeclareMathOperator{\arctg}{arctg}
+\DeclareMathOperator{\cotg}{cotg}
+\DeclareMathOperator{\agm}{agm}
+
+\newtheorem{thm}{Teorema}[section]
+\newtheorem{dfn}{Definição}[section]
+\newtheorem{prob}{Problema}[section]
+\newtheorem{cor}{Corolário}[section]
+\newtheorem{prop}{Proposição}[section]
+\newtheorem{lem}{Lema} [section]
+
+\newcounter{contar}
+
+% Variáveis do projeto
+\newcommand{\nomeUniversidade}{Universidade Federal da Bahia}
+\newcommand{\nomeInstituto}{Instituto de Computação}
+\newcommand{\nomeCurso}{Interação Humano-Computador}
+\newcommand{\nomeProfessor}{Prof. Igor Sobral}
+\newcommand{\nomeGrupo}{\sc{\large{Antoniel Magalhães (antoniels@ufba.br)}} \\
+\sc{\large{André Costa (andre.lino@ufba.br)}} \\
+\sc{\large{João Leahy (joao.leahy.ufba.br)}} \\
+\sc{\large{Luis Felipe (luis.sena@ufba.br)}} \\
+\sc{\large{Koichi Filho (koichifilho@ufba.br)}}
+}
+\newcommand{\titulo}{\sc{\Large{Projeto Prático Final: Sistema de Gestão de Monitorias (SIGA-M) \\ ETAPA 1 - ANÁLISE}}}
+
+\begin{document}
+
+% Capa
+\pagestyle{empty}
+\begin{center}
+\includegraphics[height=2.5cm]{UFBA.jpg}
+\hspace{2cm}
+\end{center}
+
+\begin{center}
+\sc{\large{\nomeUniversidade}} \\
+\sc{\large{\nomeInstituto}} \\
+\sc{\small{\nomeCurso}} \\
+
+\vspace{4cm}
+
+\titulo
+
+\vspace{4.5cm}
+
+\nomeGrupo
+
+\vspace{5.5cm}
+
+\textbf{Salvador - Bahia} \\
+18 de junho de 2025
+\end{center}
+
+% Folha de rosto:
+\newpage
+\begin{center}
+\titulo
+
+\vspace{4cm}
+
+\nomeGrupo
+\end{center}
+
+\vspace{4cm}
+
+\begin{flushright}
+\begin{minipage}{8.6cm}
+Etapa 1 do projeto prático final apresentado ao professor \nomeProfessor\ 
+como método avaliativo da disciplina \nomeCurso.
+\end{minipage}
+\end{flushright}
+ 
+\vspace{8cm}
+
+\begin{center}
+\textbf{Salvador - Bahia} \\
+18 de junho de 2025
+\end{center}
+
+% Índice
+\newpage
+\tableofcontents
+\thispagestyle{empty}
+\newpage
+\setcounter{page}{1}
+\pagestyle{plain}
+
+\chapter{Etapa 1: Análise (Situação atual)}
+\label{ch:analise}
+
+\section{Tema e Objetivo Geral do Projeto}
+
+O presente projeto visa realizar o design de IHC para o Sistema de Gestão de Monitorias (SIGA-M), uma plataforma computacional interativa destinada a otimizar os processos administrativos do programa de monitoria do Instituto de Computação (IC) da UFBA.
+
+O objetivo geral é projetar uma solução que automatize e centralize as tarefas envolvidas no ciclo de vida da monitoria — desde a submissão dos projetos pelos professores até o cadastro final dos monitores selecionados. O foco do trabalho está no design da interface e da interação, buscando reduzir a carga de trabalho manual, minimizar erros e melhorar a comunicação entre os envolvidos (comissão de monitoria, professores e alunos).
+
+\section{Identificação das Necessidades e Requisitos de IHC}
+
+\subsection{Levantamento das Necessidades dos Estudantes}
+
+O levantamento de necessidades foi realizado a partir de uma entrevista com um membro da comissão de monitoria, que atua como principal stakeholder do processo. As dores e necessidades identificadas são:
+
+\begin{itemize}
+    \item \textbf{Processo Manual e Repetitivo}: A criação de projetos de monitoria a cada semestre é manual. Professores precisam preencher documentos com informações que raramente mudam, copiando dados de editais anteriores.
+    
+    \item \textbf{Dificuldade de Gestão e Acompanhamento}: A comissão de monitoria enfrenta dificuldades para rastrear quais professores já enviaram seus projetos assinados, dependendo de planilhas e comunicação via e-mail.
+    
+    \item \textbf{Comunicação Fragmentada}: O envio de lembretes e a cobrança de pendências são feitos manualmente, consumindo tempo e energia da comissão.
+    
+    \item \textbf{Consolidação de Dados}: A geração da planilha final com todos os projetos para a Pró-Reitoria de Graduação (PROGRAD) é um trabalho manual de consolidação de múltiplos arquivos e links.
+    
+    \item \textbf{Fluxo de Trabalho Descentralizado}: O processo atual envolve múltiplos arquivos (DOCX, PDF), planilhas, e-mails e pastas em drives compartilhados, aumentando o risco de erros e perda de informação.
+\end{itemize}
+
+\subsection{Definição dos Requisitos de IHC}
+
+Com base nas necessidades, foram definidos os seguintes requisitos para o SIGA-M:
+
+\subsubsection{Requisitos Funcionais}
+
+\begin{itemize}
+    \item O sistema deve possuir três perfis de usuário: Administrador (comissão de monitoria), Professor e Aluno.
+    
+    \item Deve ser possível para o Administrador iniciar um novo ciclo de monitoria, importando a planilha de planejamento do semestre.
+    
+    \item O sistema deve gerar automaticamente os documentos de projeto de monitoria para cada disciplina, pré-preenchendo dados do professor, da disciplina e de um histórico de projetos.
+    
+    \item O Professor deve poder revisar, editar (se necessário), baixar o projeto para assinatura e fazer o upload do documento assinado.
+    
+    \item O Administrador deve ter um painel para visualizar o status de submissão de todos os projetos em tempo real.
+    
+    \item O Administrador deve poder enviar e-mails de lembrete (individualmente ou em massa) para professores com pendências.
+    
+    \item O sistema deve gerar a planilha final de projetos (para a PROGRAD) no formato exigido, com links para os documentos assinados.
+\end{itemize}
+
+\subsubsection{Requisitos Não-Funcionais}
+
+\begin{itemize}
+    \item \textbf{Usabilidade}: A interface deve ser clara e direta, permitindo que professores com diferentes níveis de familiaridade com tecnologia completem suas tarefas de forma rápida e eficiente.
+    
+    \item \textbf{Confiabilidade}: O sistema deve ser estável e garantir a integridade dos dados e documentos submetidos.
+    
+    \item \textbf{Segurança}: Dados sensíveis de professores e alunos (CPF, dados bancários, etc.) devem ser armazenados e transmitidos de forma segura.
+\end{itemize}
+
+\subsection{Matriz de Requisitos por Perfil de Usuário}
+
+A tabela a seguir apresenta uma visão consolidada dos requisitos funcionais organizados por perfil de usuário, facilitando a compreensão das responsabilidades e permissões de cada tipo de usuário no sistema.
+
+\begin{table}[H]
+\centering
+\caption{Comparação de Requisitos Funcionais por Perfil de Usuário}
+\label{tab:requisitos-perfil}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|p{4cm}|c|c|c|c|}
+\hline
+\textbf{Funcionalidade} & \textbf{Professor} & \textbf{Administrador} & \textbf{Estudante} & \textbf{Prioridade} \\
+\hline
+Login/Autenticação & \cellcolor{green!30}Sim & \cellcolor{green!30}Sim & \cellcolor{green!30}Sim & Alta \\
+\hline
+Visualizar projetos & \cellcolor{green!30}Sim & \cellcolor{green!30}Sim & \cellcolor{green!30}Sim & Alta \\
+\hline
+Criar projetos & \cellcolor{red!30}Não & \cellcolor{green!30}Sim & \cellcolor{red!30}Não & Alta \\
+\hline
+Submeter projetos & \cellcolor{green!30}Sim & \cellcolor{red!30}Não & \cellcolor{red!30}Não & Alta \\
+\hline
+Enviar lembretes & \cellcolor{red!30}Não & \cellcolor{green!30}Sim & \cellcolor{red!30}Não & Média \\
+\hline
+Candidatar-se & \cellcolor{red!30}Não & \cellcolor{red!30}Não & \cellcolor{green!30}Sim & Alta \\
+\hline
+Gerar relatórios & \cellcolor{red!30}Não & \cellcolor{green!30}Sim & \cellcolor{red!30}Não & Média \\
+\hline
+\end{tabular}
+\end{table}
+
+\section{Organização do Espaço do Problema}
+
+\subsection{Personas}
+
+Foram criadas duas personas para representar os perfis de usuários centrais no primeiro módulo do sistema:
+
+\subsubsection{Persona 1: Prof. Roberto (Coordenador da Monitoria)}
+
+\begin{center}
+\fcolorbox{blue!50}{blue!10}{
+\begin{minipage}{0.8\textwidth}
+\vspace{0.5cm}
+\begin{center}
+{\Large \textbf{Prof. Roberto (45 anos)}}
+\end{center}
+\vspace{0.3cm}
+
+\noindent \textbf{Objetivo:} Automatizar gestão de monitoria
+
+\noindent \textbf{Frustração:} Processo manual repetitivo
+
+\noindent \textbf{Nível Tech:} Alto
+
+\noindent \textbf{Disponibilidade:} Limitada
+
+\noindent \textbf{Motivação:} Eficiência e mais bolsas para alunos
+
+\vspace{0.3cm}
+\end{minipage}
+}
+\end{center}
+
+\vspace{0.5cm}
+
+\begin{itemize}
+    \item \textbf{Ocupação}: Professor do Instituto de Computação e membro da comissão de monitoria.
+    \item \textbf{Perfil}: Roberto é proativo e tecnologicamente competente. Ele dedica um tempo considerável à gestão do programa de monitoria e busca ativamente formas de otimizar o processo, pois sabe que um maior número de projetos submetidos resulta em mais bolsas para os alunos do instituto.
+    \item \textbf{Citação}: "Todo semestre é a mesma correria. Tenho que ficar conferindo planilhas, mandando e-mails de cobrança e torcendo para não ter esquecido de ninguém. É um trabalho manual que poderia ser facilmente automatizado."
+\end{itemize}
+
+\subsubsection{Persona 2: Profa. Ana (Professora Responsável por Disciplina)}
+
+\begin{center}
+\fcolorbox{purple!50}{purple!10}{
+\begin{minipage}{0.8\textwidth}
+\vspace{0.5cm}
+\begin{center}
+{\Large \textbf{Profa. Ana (38 anos)}}
+\end{center}
+\vspace{0.3cm}
+
+\noindent \textbf{Objetivo:} Submissão rápida e simples
+
+\noindent \textbf{Frustração:} Documentos perdidos/retrabalho
+
+\noindent \textbf{Nível Tech:} Médio
+
+\noindent \textbf{Disponibilidade:} Muito limitada
+
+\noindent \textbf{Motivação:} Cumprir obrigação eficientemente
+
+\vspace{0.3cm}
+\end{minipage}
+}
+\end{center}
+
+\vspace{0.5cm}
+
+\begin{itemize}
+    \item \textbf{Ocupação}: Professora do Instituto de Computação.
+    \item \textbf{Perfil}: Ana é uma professora dedicada, com uma agenda cheia de aulas, reuniões e orientações de pesquisa. Ela valoriza o programa de monitoria, mas vê o processo burocrático de submissão do projeto como mais uma tarefa administrativa em sua longa lista de afazeres.
+    \item \textbf{Citação}: "Eu nunca lembro onde salvei o arquivo do semestre passado. Acabo tendo que preencher tudo de novo, mesmo sabendo que a descrição da monitoria de Algoritmos não muda quase nada de um ano para o outro."
+\end{itemize}
+
+\subsection{Cenários}
+
+A seguir, apresentamos cenários de uso detalhados para cada persona, com fluxogramas que ilustram visualmente os passos e decisões envolvidos no processo.
+
+\subsubsection{Cenário 1: Prof. Roberto iniciando o ciclo de monitoria}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.2\textwidth]{roberto.png}
+\caption{Fluxo de interação do Prof. Roberto iniciando um novo ciclo de monitoria}
+\label{fig:cenario-roberto}
+\end{figure}
+
+\textbf{Descrição narrativa:}
+Roberto acessa o SIGA-M e navega para a área de Administração. Ele clica em "Iniciar Novo Ciclo de Monitoria". O sistema solicita a planilha de planejamento do semestre 2025.1. Ele faz o upload do arquivo. Em poucos segundos, o sistema exibe uma mensagem: "Ciclo 2025.1 iniciado com sucesso. 62 projetos de monitoria gerados e notificações enviadas aos professores responsáveis."
+
+Em seu painel, Roberto vê o status "Projetos Submetidos: 0/62". Uma semana depois, ele acessa novamente o painel, que agora marca "45/62". Ele filtra a lista para exibir apenas os professores com status "Pendente" e clica no botão "Enviar Lembrete para Todos os Pendentes". O sistema confirma o envio de 17 e-mails de lembrete.
+
+\subsubsection{Cenário 2: Profa. Ana submetendo seu projeto}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.2\textwidth]{ana.png}
+\caption{Fluxo de submissão de projeto pela Profa. Ana}
+\label{fig:cenario-ana}
+\end{figure}
+
+\textbf{Descrição narrativa:}
+Ana recebe um e-mail com o assunto "SIGA-M: Seu projeto de monitoria para a disciplina de Algoritmos e Estrutura de Dados I está pronto". O e-mail contém um link direto. Ao clicar, ela é levada à página de login do SIGA-M. Após se autenticar, ela vê o documento de seu projeto já preenchido. Ela lê rapidamente e concorda com o conteúdo, que é o mesmo do ano anterior. Ela clica em "Baixar para Assinatura", abre o PDF, aplica sua assinatura digital e salva o arquivo. Em seguida, na mesma página, ela arrasta e solta o PDF assinado na área indicada. Uma mensagem de sucesso aparece: "Projeto enviado com sucesso!". O processo inteiro levou menos de cinco minutos.
+
+\subsection{Análise Hierárquica de Tarefas (HTA)}
+
+A Análise Hierárquica de Tarefas apresenta a decomposição estruturada do objetivo principal do professor no sistema SIGA-M. O diagrama a seguir ilustra visualmente a hierarquia de tarefas e subtarefas envolvidas no processo de submissão de projetos de monitoria.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth]{hta.png}
+\caption{Análise Hierárquica de Tarefas - Submeter projeto de monitoria}
+\label{fig:hta-diagram}
+\end{figure}
+
+\textbf{Objetivo principal}: Submeter o projeto de monitoria
+
+\textbf{Planos de ação}:
+\begin{itemize}
+    \item \textbf{Plano 0}: Executar tarefas 1-8 em sequência
+    \item \textbf{Plano 3}: Se dados estiverem incorretos ou incompletos na tarefa 3.1 ou 3.2, executar 3.3
+    \item \textbf{Plano 3.3}: Executar 3.3.1, 3.3.2 e 3.3.3 em sequência
+\end{itemize}
+
+\textbf{Condições de ativação}:
+\begin{itemize}
+    \item A tarefa 3.3 (edição) só é executada se o conteúdo não estiver adequado
+    \item A confirmação (tarefa 7) só ocorre após upload bem-sucedido
+    \item O usuário pode sair do sistema (tarefa 8) a qualquer momento após a confirmação
+\end{itemize}
+
+\end{document} 

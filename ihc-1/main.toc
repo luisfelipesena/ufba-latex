@@ -1,0 +1,17 @@
+\babel@toc {brazil}{}\relax 
+\contentsline {chapter}{\numberline {1}Etapa 1: Análise (Situação atual)}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Tema e Objetivo Geral do Projeto}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Identificação das Necessidades e Requisitos de IHC}{1}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Levantamento das Necessidades dos Estudantes}{1}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Definição dos Requisitos de IHC}{2}{subsection.1.2.2}%
+\contentsline {subsubsection}{Requisitos Funcionais}{2}{section*.2}%
+\contentsline {subsubsection}{Requisitos Não-Funcionais}{3}{section*.3}%
+\contentsline {subsection}{\numberline {1.2.3}Matriz de Requisitos por Perfil de Usuário}{3}{subsection.1.2.3}%
+\contentsline {section}{\numberline {1.3}Organização do Espaço do Problema}{3}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Personas}{3}{subsection.1.3.1}%
+\contentsline {subsubsection}{Persona 1: Prof. Roberto (Coordenador da Monitoria)}{4}{section*.5}%
+\contentsline {subsubsection}{Persona 2: Profa. Ana (Professora Responsável por Disciplina)}{4}{section*.6}%
+\contentsline {subsection}{\numberline {1.3.2}Cenários}{5}{subsection.1.3.2}%
+\contentsline {subsubsection}{Cenário 1: Prof. Roberto iniciando o ciclo de monitoria}{6}{section*.7}%
+\contentsline {subsubsection}{Cenário 2: Profa. Ana submetendo seu projeto}{7}{section*.9}%
+\contentsline {subsection}{\numberline {1.3.3}Análise Hierárquica de Tarefas (HTA)}{8}{subsection.1.3.3}%
