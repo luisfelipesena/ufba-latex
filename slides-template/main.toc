@@ -1,7 +1,5 @@
 \babel@toc {portuguese}{}\relax 
-\beamer@sectionintoc {1}{Introdução}{3}{0}{1}
-\beamer@sectionintoc {2}{Conceitos de IHC Aplicados}{4}{0}{2}
-\beamer@sectionintoc {3}{Pontos Fortes e Fracos}{9}{0}{3}
-\beamer@sectionintoc {4}{Propostas de Melhoria}{11}{0}{4}
-\beamer@sectionintoc {5}{Conclusão}{13}{0}{5}
-\beamer@sectionintoc {6}{Perguntas e Comentários}{14}{0}{6}
+\beamer@sectionintoc {1}{Fundamentos Teóricos}{3}{0}{1}
+\beamer@sectionintoc {2}{Estudo de Caso: Benevenuto \& Melo (CACM 2024)}{14}{0}{2}
+\beamer@sectionintoc {3}{Perguntas e Comentários}{23}{0}{3}
+\beamer@sectionintoc {4}{Referências}{24}{0}{4}
