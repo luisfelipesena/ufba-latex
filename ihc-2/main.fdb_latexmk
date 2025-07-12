@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1751406165.43019 "/Users/luisfelipesena/Development/Personal/ufba-latex/ihc-2/main.tex" "main.pdf" "main" 1751406166.63116 0
-  "/Users/luisfelipesena/Development/Personal/ufba-latex/ihc-2/main.tex" 1751406164.0853 10658 3cc9afb7d702018d180e6ef61cb2d18b ""
+["pdflatex"] 1752338923.573 "/Users/luisfelipesena/Development/Personal/ufba-latex/ihc-2/main.tex" "main.pdf" "main" 1752338924.81193 0
+  "/Users/luisfelipesena/Development/Personal/ufba-latex/ihc-2/main.tex" 1752338923.32116 10790 5cbf15d5b2e051401435f33dbcb9b310 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -121,10 +121,10 @@
   "figma/Tipografia.png" 1751406140.93748 64349 5a2520ecb1f13f999123348dff4dd02e ""
   "figma/excalidraw-design.png" 1751406140.93778 151378 43ee910400000482b5714e8417966941 ""
   "figma/projeto-monitoria.png" 1751406140.93805 94034 7b7e24603d4aff724c710c8ffca82a72 ""
-  "main.aux" 1751406166.5845 4157 975723eb2af238014368229dda97b677 "pdflatex"
-  "main.out" 1751406166.58552 2655 1d2fffbfc271f0fca1cce2739cdaba2e "pdflatex"
-  "main.tex" 1751406164.0853 10658 3cc9afb7d702018d180e6ef61cb2d18b ""
-  "main.toc" 1751406166.58572 1456 f31f23979a939492b9a3c781d2d92395 "pdflatex"
+  "main.aux" 1752338924.76503 4157 975723eb2af238014368229dda97b677 "pdflatex"
+  "main.out" 1752338924.76593 2655 1d2fffbfc271f0fca1cce2739cdaba2e "pdflatex"
+  "main.tex" 1752338923.32116 10790 5cbf15d5b2e051401435f33dbcb9b310 ""
+  "main.toc" 1752338924.76608 1456 f31f23979a939492b9a3c781d2d92395 "pdflatex"
   (generated)
   "main.aux"
   "main.log"

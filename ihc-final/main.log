@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.1)  1 JUL 2025 18:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.1)  12 JUL 2025 14:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -641,7 +641,7 @@ Package hyperref Info: Link coloring OFF on input line 63.
 File: translations-basic-dictionary-brazil.trsl (brazil translation file `translations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' for `brazil'. on input line 63.
-<Figuras/UFBA.jpg, id=180, 289.3209pt x 446.1468pt>
+<Figuras/UFBA.jpg, id=176, 289.3209pt x 446.1468pt>
 File: Figuras/UFBA.jpg Graphic file (type jpg)
 <use Figuras/UFBA.jpg>
 Package pdftex.def Info: Figuras/UFBA.jpg  used on input line 68.
@@ -708,7 +708,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has b
                    \relax 
 l.285     \item \textbf
                        {Citação}: "Eu nunca lembro onde salvei o arquivo d... [4]
-<Figuras/roberto.png, id=266, 743.77875pt x 3854.4pt>
+<Figuras/roberto.png, id=261, 743.77875pt x 3854.4pt>
 File: Figuras/roberto.png Graphic file (type png)
 <use Figuras/roberto.png>
 Package pdftex.def Info: Figuras/roberto.png  used on input line 296.
@@ -718,7 +718,7 @@ Package pdftex.def Info: Figuras/roberto.png  used on input line 296.
 [5]
 
 [6 <./Figuras/roberto.png>]
-<Figuras/ana.png, id=279, 629.35126pt x 3854.4pt>
+<Figuras/ana.png, id=274, 629.35126pt x 3854.4pt>
 File: Figuras/ana.png Graphic file (type png)
 <use Figuras/ana.png>
 Package pdftex.def Info: Figuras/ana.png  used on input line 310.
@@ -726,7 +726,7 @@ Package pdftex.def Info: Figuras/ana.png  used on input line 310.
 
 
 [7 <./Figuras/ana.png>]
-<Figuras/hta.png, id=287, 3854.4pt x 898.35625pt>
+<Figuras/hta.png, id=282, 3854.4pt x 898.35625pt>
 File: Figuras/hta.png Graphic file (type png)
 <use Figuras/hta.png>
 Package pdftex.def Info: Figuras/hta.png  used on input line 324.
@@ -735,7 +735,7 @@ Package pdftex.def Info: Figuras/hta.png  used on input line 324.
 
 [8 <./Figuras/hta.png>]
 Cap\'{\i }tulo 2.
-<figma/excalidraw-design.png, id=295, 3376.615pt x 599.23875pt>
+<figma/excalidraw-design.png, id=290, 3376.615pt x 599.23875pt>
 File: figma/excalidraw-design.png Graphic file (type png)
 <use figma/excalidraw-design.png>
 Package pdftex.def Info: figma/excalidraw-design.png  used on input line 356.
@@ -745,19 +745,28 @@ Package pdftex.def Info: figma/excalidraw-design.png  used on input line 356.
 [9
 
  <./figma/excalidraw-design.png>]
-Overfull \hbox (51.12206pt too wide) in paragraph at lines 406--407
-[][]$\OT1/cmtt/m/n/12 https : / / www . figma . com / design / meTbBaQdqBHlvtzBEb9ehF / Sistema-[]de-[]Monitoria-[]IC ?
+Overfull \hbox (44.94705pt too wide) in paragraph at lines 406--407
+[][]$\OT1/cmtt/m/n/12 https : / / www . figma . com / proto / meTbBaQdqBHlvtzBEb9ehF / Sistema-[]de-[]Monitoria-[]IC ?
  []
 
 
-Overfull \hbox (16.63266pt too wide) in paragraph at lines 408--409
-[]\OT1/cmr/m/n/12 O prot^^Sotipo per-mite a si-mula^^Xc~ao com-pleta do fluxo sim-pli-fi-cado professor-coordenador,
+Overfull \hbox (97.33116pt too wide) in paragraph at lines 406--407
+\OT1/cmtt/m/n/12 page-[]id = 902 : 2983 & node-[]id = 982-[]10463 & t = YUf33KtGKI4XtKzN-[]0 & scaling = min-[]zoom & content-[]scaling =
  []
 
 
 
 [10]
-<figma/Login.png, id=323, 1445.4pt x 1027.84pt>
+Overfull \hbox (16.63266pt too wide) in paragraph at lines 408--409
+[]\OT1/cmr/m/n/12 O prot^^Sotipo per-mite a si-mula^^Xc~ao com-pleta do fluxo sim-pli-fi-cado professor-coordenador,
+ []
+
+
+Overfull \hbox (18.74704pt too wide) in paragraph at lines 414--415
+[][]$\OT1/cmtt/m/n/12 https : / / drive . google . com / file / d / 1VY4ASzuriJqoO2uJ _ hX88cgilz3mBToo / view ?
+ []
+
+<figma/Login.png, id=319, 1445.4pt x 1027.84pt>
 File: figma/Login.png Graphic file (type png)
 <use figma/Login.png>
 Package pdftex.def Info: figma/Login.png  used on input line 426.
@@ -765,7 +774,7 @@ Package pdftex.def Info: figma/Login.png  used on input line 426.
 
 
 [11]
-<figma/projeto-monitoria.png, id=330, 1469.49pt x 1595.9625pt>
+<figma/projeto-monitoria.png, id=328, 1469.49pt x 1595.9625pt>
 File: figma/projeto-monitoria.png Graphic file (type png)
 <use figma/projeto-monitoria.png>
 Package pdftex.def Info: figma/projeto-monitoria.png  used on input line 443.
@@ -775,7 +784,7 @@ Package pdftex.def Info: figma/projeto-monitoria.png  used on input line 443.
 [12 <./figma/Login.png>]
 
 [13 <./figma/projeto-monitoria.png>]
-<figma/Dashboard_coodenador.png, id=343, 1445.4pt x 1684.2925pt>
+<figma/Dashboard_coodenador.png, id=341, 1445.4pt x 1684.2925pt>
 File: figma/Dashboard_coodenador.png Graphic file (type png)
 <use figma/Dashboard_coodenador.png>
 Package pdftex.def Info: figma/Dashboard_coodenador.png  used on input line 461.
@@ -783,12 +792,12 @@ Package pdftex.def Info: figma/Dashboard_coodenador.png  used on input line 461.
 
 
 [14 <./figma/Dashboard_coodenador.png>]
-<figma/Cores.png, id=350, 2687.03876pt x 2527.4425pt>
+<figma/Cores.png, id=348, 2687.03876pt x 2527.4425pt>
 File: figma/Cores.png Graphic file (type png)
 <use figma/Cores.png>
 Package pdftex.def Info: figma/Cores.png  used on input line 479.
 (pdftex.def)             Requested size: 364.19667pt x 342.53981pt.
-<figma/Tipografia.png, id=351, 2479.2625pt x 2040.62375pt>
+<figma/Tipografia.png, id=349, 2479.2625pt x 2040.62375pt>
 File: figma/Tipografia.png Graphic file (type png)
 <use figma/Tipografia.png>
 Package pdftex.def Info: figma/Tipografia.png  used on input line 497.
@@ -802,27 +811,12 @@ Package pdftex.def Info: figma/Tipografia.png  used on input line 497.
 [17]
 Cap\'{\i }tulo 3.
 
-Overfull \hbox (60.78511pt too wide) in paragraph at lines 549--550
-[]\OT1/cmr/bx/n/12 TODO: [DE-TA-LHAR PER-FIL DOS PAR-TI-CI-PAN-TES RE-AIS DA AVALIA[][]AO] 
- []
-
-
 
 [18
 
 ]
-Overfull \hbox (6.55194pt too wide) in paragraph at lines 583--584
-[]\OT1/cmr/bx/n/12 TODO: [IN-SE-RIR QUES-TION[]ARIO/ROTEIRO DE AVALIA[][]AO UTI-
- []
-
-
 
 [19]
-Overfull \hbox (1.66165pt too wide) in paragraph at lines 627--628
-[]\OT1/cmr/bx/n/12 TODO: [JUS-TI-FI-CAR MUDAN[]AS SU-GE-RI-DAS QUE N[]AO FO-RAM
- []
-
-
 
 [20]
 Cap\'{\i }tulo 4.
@@ -833,13 +827,10 @@ Cap\'{\i }tulo 4.
 ]
 
 [22]
-Overfull \hbox (16.68936pt too wide) in paragraph at lines 730--731
-[]\OT1/cmr/bx/n/12 TODO: [CADA MEM-BRO DEVE FOR-NE-CER SUA AUTOAVALIA[][]AO] 
- []
 
+[23]
 
-
-[23] (./main.aux)
+[24] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -849,21 +840,21 @@ L3 programming layer <2025-01-18>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 51C6B43A3BC293B6705C271CC0DC8BBE;8857.
+(rerunfilecheck)             Checksum: 89D8144B4E58D688AFD8238FE97A485E;8639.
  ) 
 Here is how much of TeX's memory you used:
- 19098 strings out of 473190
- 364591 string characters out of 5715801
- 744268 words of memory out of 5000000
- 42012 multiletter control sequences out of 15000+600000
+ 19094 strings out of 473190
+ 364556 string characters out of 5715801
+ 744265 words of memory out of 5000000
+ 42008 multiletter control sequences out of 15000+600000
  567422 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,12n,79p,773b,1176s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (27 pages, 1174765 bytes).
+Output written on main.pdf (28 pages, 1179890 bytes).
 PDF statistics:
- 457 PDF objects out of 1000 (max. 8388607)
- 395 compressed objects within 4 object streams
+ 459 PDF objects out of 1000 (max. 8388607)
+ 396 compressed objects within 4 object streams
  111 named destinations out of 1000 (max. 500000)
- 403 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 395 words of extra memory for PDF output out of 10000 (max. 10000000)
 

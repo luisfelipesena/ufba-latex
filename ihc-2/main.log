@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.1)  1 JUL 2025 18:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.1)  12 JUL 2025 13:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -682,13 +682,13 @@ l.151     \item \textbf
                        {Dashboard}: Visualização de projetos existentes ou... [1
 
  <./figma/excalidraw-design.png>]
-Overfull \hbox (51.12206pt too wide) in paragraph at lines 183--184
-[][]$\OT1/cmtt/m/n/12 https : / / www . figma . com / design / meTbBaQdqBHlvtzBEb9ehF / Sistema-[]de-[]Monitoria-[]IC ?
+Overfull \hbox (44.94705pt too wide) in paragraph at lines 183--184
+[][]$\OT1/cmtt/m/n/12 https : / / www . figma . com / proto / meTbBaQdqBHlvtzBEb9ehF / Sistema-[]de-[]Monitoria-[]IC ?
  []
 
 
-Overfull \hbox (16.63266pt too wide) in paragraph at lines 185--186
-[]\OT1/cmr/m/n/12 O prot^^Sotipo per-mite a si-mula^^Xc~ao com-pleta do fluxo sim-pli-fi-cado professor-coordenador,
+Overfull \hbox (97.33116pt too wide) in paragraph at lines 183--184
+\OT1/cmtt/m/n/12 page-[]id = 902 : 2983 & node-[]id = 982-[]10463 & t = YUf33KtGKI4XtKzN-[]0 & scaling = min-[]zoom & content-[]scaling =
  []
 
 
@@ -697,8 +697,12 @@ Overfull \hbox (16.63266pt too wide) in paragraph at lines 185--186
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.186 
-       [2]
+l.185 O
+        protótipo permite a simulação completa do fluxo simplificado prof... [2]
+Overfull \hbox (16.63266pt too wide) in paragraph at lines 185--186
+[]\OT1/cmr/m/n/12 O prot^^Sotipo per-mite a si-mula^^Xc~ao com-pleta do fluxo sim-pli-fi-cado professor-coordenador,
+ []
+
 <figma/Login.png, id=128, 1445.4pt x 1027.84pt>
 File: figma/Login.png Graphic file (type png)
 <use figma/Login.png>
@@ -712,7 +716,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has b
                    \relax 
 l.205     \item \textbf
                        {Segurança Visual}: Campo de senha com opção de vi... [3 <./figma/Login.png>]
-<figma/projeto-monitoria.png, id=136, 1469.49pt x 1595.9625pt>
+<figma/projeto-monitoria.png, id=137, 1469.49pt x 1595.9625pt>
 File: figma/projeto-monitoria.png Graphic file (type png)
 <use figma/projeto-monitoria.png>
 Package pdftex.def Info: figma/projeto-monitoria.png  used on input line 212.
@@ -725,7 +729,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has b
                    \relax 
 l.221     \item \textbf
                        {Validação em Tempo Real}: Indicadores visuais de c... [4 <./figma/projeto-monitoria.png>]
-<figma/Dashboard_coodenador.png, id=142, 1445.4pt x 1684.2925pt>
+<figma/Dashboard_coodenador.png, id=143, 1445.4pt x 1684.2925pt>
 File: figma/Dashboard_coodenador.png Graphic file (type png)
 <use figma/Dashboard_coodenador.png>
 Package pdftex.def Info: figma/Dashboard_coodenador.png  used on input line 230.
@@ -738,7 +742,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has b
                    \relax 
 l.238     \item \textbf
                        {Filtros Rápidos}: Opções para filtrar por status ... [5 <./figma/Dashboard_coodenador.png>]
-<figma/Cores.png, id=149, 2687.03876pt x 2527.4425pt>
+<figma/Cores.png, id=150, 2687.03876pt x 2527.4425pt>
 File: figma/Cores.png Graphic file (type png)
 <use figma/Cores.png>
 Package pdftex.def Info: figma/Cores.png  used on input line 248.
@@ -746,7 +750,7 @@ Package pdftex.def Info: figma/Cores.png  used on input line 248.
 
 
 [6 <./figma/Cores.png>]
-<figma/Tipografia.png, id=156, 2479.2625pt x 2040.62375pt>
+<figma/Tipografia.png, id=157, 2479.2625pt x 2040.62375pt>
 File: figma/Tipografia.png Graphic file (type png)
 <use figma/Tipografia.png>
 Package pdftex.def Info: figma/Tipografia.png  used on input line 266.
@@ -776,10 +780,10 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  75i,6n,79p,601b,1128s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (13 pages, 779201 bytes).
+Output written on main.pdf (13 pages, 781358 bytes).
 PDF statistics:
- 205 PDF objects out of 1000 (max. 8388607)
- 165 compressed objects within 2 object streams
+ 206 PDF objects out of 1000 (max. 8388607)
+ 166 compressed objects within 2 object streams
  44 named destinations out of 1000 (max. 500000)
  148 words of extra memory for PDF output out of 10000 (max. 10000000)
 

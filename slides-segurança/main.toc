@@ -1,0 +1,5 @@
+\babel@toc {portuguese}{}\relax 
+\beamer@sectionintoc {1}{Fundamentos Teóricos}{3}{0}{1}
+\beamer@sectionintoc {2}{Estudo de Caso: Benevenuto \& Melo (CACM 2024)}{14}{0}{2}
+\beamer@sectionintoc {3}{Perguntas e Comentários}{23}{0}{3}
+\beamer@sectionintoc {4}{Referências}{24}{0}{4}
