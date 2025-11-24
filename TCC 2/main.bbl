@@ -1,61 +1,204 @@
 \begin{thebibliography}{}
 
-\bibitem[Andrade, 2023]{Andrade2023}
-Andrade, R. d.~O. (2023).
-\newblock Capes assessment finds that quality indicators for master’s and doctoral courses in brazil have improved.
-\newblock Accessed: 19 July 2025.
+\bibitem[{ABED - Associação Brasileira de Educação a Distância}
+  2023]{ABED2023}
+{ABED - Associação Brasileira de Educação a Distância} (2023).
+\newblock Censo ead.br 2022/2023: Relatório analítico da aprendizagem a
+  distância no brasil.
 
-\bibitem[{CAPES}, 2014]{CAPES2014}
-{CAPES} (2014).
-\newblock {PORTARIA Nº 156/2014, CAPES: Aprova o novo regulamento do Programa de Apoio à Pós-graduação - PROAP}.
-\newblock Accessed: 19 July 2025.
+\bibitem[Alves et~al. 2009]{Alves2009}
+Alves, L., Barros, D., and Okada, A. (2009).
+\newblock Moodle: estratégias pedagógicas e estudos de caso.
+\newblock In {\em UNEB/UFRGS}.
 
-\bibitem[{CAPES}, 2023]{CAPES_History}
-{CAPES} (2023).
-\newblock Proap history.
-\newblock Post-Graduate Support Program (PROAP).
-\newblock Accessed: 19 July 2025.
+\bibitem[Anderson 2003]{Anderson2003}
+Anderson, T. (2003).
+\newblock Getting the mix right again: An updated and theoretical rationale for
+  interaction.
+\newblock {\em The International Review of Research in Open and Distributed
+  Learning}, 4(2).
 
-\bibitem[Castro {\em et~al}., 2005]{castro2005sistema}
-Castro, P. M. R.~D., Porto, G.~S., and Lira, L. A. R.~D. (2005).
-\newblock {Sistema de Informa{\c{c}}{\~a}o, Gest{\~a}o e Controle de Gastos em C\&T: O caso Proap Advanced na CAPES}.
-\newblock In {\em XI Semin{\'a}rio Latino-Iberoamericano de Gesti{\'o}n Tecnol{\'o}gica}.
+\bibitem[Bates 2015]{Bates2015}
+Bates, A. W.~T. (2015).
+\newblock {\em Teaching in a Digital Age: Guidelines for Designing Teaching and
+  Learning}.
+\newblock Tony Bates Associates Ltd.
 
-\bibitem[Falquetto {\em et~al}., 2018]{falquetto2018avaliacao}
-Falquetto, A.~M., Takasago, M., Pe{\~n}a, C.~R., de~Ara{\'u}jo~Neto, L.~M., and Sales, I. C.~H. (2018).
-\newblock {AVALIA{\c{C}}{\~A}O DA EFICI{\^E}NCIA DOS PROGRAMAS DE ECONOMIA NO PA{\'\I}S CONTEMPLADOS COM O PROEX E O PROAP}.
-\newblock {\em RACE, Revista de Administra{\c{c}}{\~a}o, Contabilidade e Economia}, 17(1):333--364. DOI: https://doi.org/10.18593/race.v17i1.16299.
+\bibitem[Burgstahler 2015]{Burgstahler2015}
+Burgstahler, S. (2015).
+\newblock {\em Universal Design in Higher Education: From Principles to
+  Practice}.
+\newblock Harvard Education Press, 2nd edition.
 
-\bibitem[{Folha de S.Paulo}, 2024]{folha2024ruf}
-{Folha de S.Paulo} (2024).
-\newblock {RUF 2024: Ranking de Universidades}.
-\newblock \url{https://ruf.folha.uol.com.br/2024/ranking-de-universidades/principal/}.
-\newblock Acessado em: 27 de julho de 2024.
+\bibitem[Campbell 2025]{Campbell2025}
+Campbell, J. (2025).
+\newblock Virtual learning environment (vle).
+\newblock In {\em EBSCO Research Starters}. EBSCO Publishing.
 
-\bibitem[Freitas, 2016]{freitas2016analise}
-Freitas, L. A. N.~d. (2016).
-\newblock An{\'a}lise do uso do recurso proap/capes nos programas de p{\'o}s-gradua{\c{c}}{\~a}o em qu{\'\i}mica e f{\'\i}sica da ufes no per{\'\i}odo de 2010 a 2012.
-\newblock Master's thesis, Universidade Federal do Esp{\'\i}rito Santo.
+\bibitem[Crompton 2013]{Crompton2013}
+Crompton, H. (2013).
+\newblock A historical overview of mobile learning: Toward learner-centered
+  education.
+\newblock {\em Handbook of Mobile Learning}, pages 3--14.
 
-\bibitem[Laudon and Laudon, 2011]{Laudon_Laudon_2011}
-Laudon, K.~C. and Laudon, J.~P. (2011).
-\newblock {\em Sistemas de Informação gerenciais}.
-\newblock Pearson Prentice Hall.
+\bibitem[Deterding et~al. 2011]{Deterding2011}
+Deterding, S., Dixon, D., Khaled, R., and Nacke, L. (2011).
+\newblock From game design elements to gamefulness: defining gamification.
+\newblock {\em Proceedings of the 15th International Academic MindTrek
+  Conference}, pages 9--15.
 
-\bibitem[Padilha, 2013]{padilha2013sigppg}
-Padilha, E.~L. (2013).
-\newblock {SIGPPG - Sistema de Informa{\c{c}}{\~a}o para Gerenciamento de Programas de P{\'o}s-Gradua{\c{c}}{\~a}o}.
-\newblock Technical report, Centro Universit{\'a}rio FACVEST.
-\newblock Trabalho de Conclus{\~a}o de Curso.
+\bibitem[Dillenbourg 1999]{Dillenbourg1999}
+Dillenbourg, P. (1999).
+\newblock What do you mean by collaborative learning?
+\newblock {\em Collaborative-learning: Cognitive and Computational Approaches},
+  pages 1--19.
 
-\bibitem[Xavier {\em et~al}., 2024]{xavier2024utilizacao}
-Xavier, R.~C., dos Santos, C.~N., Sgarbi, V.~S., Fokin, V.~M., and Nascimento, M. L.~F. (2024).
-\newblock {UTILIZA{\c{C}}{\~A}O DOS RECURSOS PROAP/CAPES NO PROGRAMA DE P{\'O}S-GRADUA{\c{C}}{\~A}O EM ENGENHARIA INDUSTRIAL DA UNIVERSIDADE FEDERAL DA BAHIA}.
-\newblock In {\em Congresso Internacional de Administra{\c{c}}{\~a}o}.
+\bibitem[Dougiamas and Taylor 2003]{Dougiamas2003}
+Dougiamas, M. and Taylor, P.~C. (2003).
+\newblock Moodle: Using learning communities to create an open source course
+  management system.
+\newblock {\em Proceedings of the EDMEDIA 2003 Conference}, pages 171--178.
 
-\bibitem[Xue {\em et~al}., 2024]{UTAUT}
-Xue, L., Rashid, A.~M., and Ouyang, S. (2024).
-\newblock The unified theory of acceptance and use of technology (utaut) in higher education: A systematic review.
-\newblock {\em SAGE Open}, 14(1):21582440241229570. DOI: 10.1177/21582440241229570.
+\bibitem[Dziuban et~al. 2018]{Dziuban2018}
+Dziuban, C., Graham, C.~R., Moskal, P.~D., Norberg, A., and Sicilia, N. (2018).
+\newblock Blended learning: the new normal and emerging technologies.
+\newblock {\em International Journal of Educational Technology in Higher
+  Education}, 15(3).
+
+\bibitem[Ferguson and Clow 2014]{Ferguson2014}
+Ferguson, R. and Clow, D. (2014).
+\newblock Where is the evidence? a call to action for learning analytics.
+\newblock In {\em Proceedings of the Fourth International Conference on
+  Learning Analytics and Knowledge}, pages 56--65. ACM.
+
+\bibitem[Garrison 2016]{Garrison2016}
+Garrison, D.~R. (2016).
+\newblock {\em E-Learning in the 21st Century: A Community of Inquiry Framework
+  for Research and Practice}.
+\newblock Routledge, 3rd edition.
+
+\bibitem[Graham 2006]{Graham2006}
+Graham, C.~R. (2006).
+\newblock Blended learning systems: Definition, current trends, and future
+  directions.
+\newblock {\em Handbook of Blended Learning: Global Perspectives, Local
+  Designs}, pages 3--21.
+
+\bibitem[Harasim 2012]{Harasim2012}
+Harasim, L. (2012).
+\newblock {\em Learning Theory and Online Technologies}.
+\newblock Routledge.
+
+\bibitem[Hodges et~al. 2020]{Hodges2020}
+Hodges, C., Moore, S., Lockee, B., Trust, T., and Bond, A. (2020).
+\newblock The difference between emergency remote teaching and online learning.
+\newblock {\em EDUCAUSE Review}.
+
+\bibitem[Jonassen and Land 1999]{Jonassen1999}
+Jonassen, D.~H. and Land, S.~M. (1999).
+\newblock {\em Theoretical Foundations of Learning Environments}.
+\newblock Lawrence Erlbaum Associates.
+
+\bibitem[Kapp 2012]{Kapp2012}
+Kapp, K.~M. (2012).
+\newblock {\em The Gamification of Learning and Instruction: Game-based Methods
+  and Strategies for Training and Education}.
+\newblock Pfeiffer.
+
+\bibitem[Koehler and Mishra 2009]{Koehler2009}
+Koehler, M.~J. and Mishra, P. (2009).
+\newblock What is technological pedagogical content knowledge?
+\newblock {\em Contemporary Issues in Technology and Teacher Education},
+  9(1):60--70.
+
+\bibitem[Martins et~al. 2016]{Martins2016}
+Martins, D.~O., Tiziotto, S.~A., and Cazarini, E.~W. (2016).
+\newblock Ambientes virtuais de aprendizagem (avas) como ferramentas de apoio
+  em ambientes complexos de aprendizagem (acas).
+\newblock {\em Revista Brasileira de Aprendizagem Aberta e a Distância},
+  15:1--18.
+
+\bibitem[{MEC - Ministério da Educação} 2017]{MEC2017}
+{MEC - Ministério da Educação} (2017).
+\newblock Portaria normativa nº 11, de 20 de junho de 2017. estabelece normas
+  para o credenciamento de instituições e a oferta de cursos superiores a
+  distância.
+
+\bibitem[Mishra and Koehler 2006]{Mishra2006}
+Mishra, P. and Koehler, M.~J. (2006).
+\newblock Technological pedagogical content knowledge: A framework for teacher
+  knowledge.
+\newblock {\em Teachers College Record}, 108(6):1017--1054.
+
+\bibitem[Moore 1989]{Moore1989}
+Moore, M.~G. (1989).
+\newblock Three types of interaction.
+\newblock {\em The American Journal of Distance Education}, 3(2):1--6.
+
+\bibitem[Oxman and Wong 2014]{Oxman2008}
+Oxman, S. and Wong, W. (2014).
+\newblock Adaptive learning systems.
+\newblock {\em Integrated Education Solutions}.
+
+\bibitem[Pereira et~al. 2007]{Pereira2007}
+Pereira, A. T.~C., Schmitt, V., and Dias, M. R. A.~C. (2007).
+\newblock Ambientes virtuais de aprendizagem.
+\newblock {\em AVA - Ambientes Virtuais de Aprendizagem em Diferentes
+  Contextos}, pages 2--22.
+
+\bibitem[Rose and Meyer 2002]{Rose2002}
+Rose, D.~H. and Meyer, A. (2002).
+\newblock {\em Teaching Every Student in the Digital Age: Universal Design for
+  Learning}.
+\newblock Association for Supervision and Curriculum Development.
+
+\bibitem[Santos~Jr 2023]{Santos2023_gamification}
+Santos~Jr, A. C. P.~d. (2023).
+\newblock Gamificação em ambiente virtual de aprendizagem: uma experiência
+  de utilização na formação continuada de professores.
+\newblock {\em RECIMA21 - Revista Científica Multidisciplinar}, 4(3):e433145.
+
+\bibitem[Siemens and Gasevic 2013]{Siemens2013}
+Siemens, G. and Gasevic, D. (2013).
+\newblock Guest editorial-learning and knowledge analytics.
+\newblock {\em Educational Technology \& Society}, 16(1):1--2.
+
+\bibitem[Souza 2023]{Souza2023}
+Souza, A. S.~d. (2023).
+\newblock A educação a distância: um estudo sobre o ambiente virtual de
+  aprendizagem moodle.
+\newblock {\em Revista SCIAS - Educação, Comunicação e Tecnologia},
+  5(2):112--129.
+
+\bibitem[Traxler 2011]{Traxler2011}
+Traxler, J. (2011).
+\newblock Mobile learning: Starting in the right place, going in the right
+  direction?
+\newblock {\em International Journal of Mobile and Blended Learning}, 3:57--67.
+
+\bibitem[{UNESCO} 2022]{UNESCO2022}
+{UNESCO} (2022).
+\newblock Digital transformation of higher education: Towards a learner-centred
+  ecosystem.
+\newblock Relatório da UNESCO sobre transformação digital da educação
+  superior.
+
+\bibitem[Vygotsky 1978]{Vygotsky1978}
+Vygotsky, L.~S. (1978).
+\newblock {\em Mind in Society: The Development of Higher Psychological
+  Processes}.
+\newblock Harvard University Press.
+
+\bibitem[Williamson et~al. 2020]{Williamson2020}
+Williamson, B., Eynon, R., and Potter, J. (2020).
+\newblock Pandemic politics, pedagogies and practices: digital technologies and
+  distance education during the coronavirus emergency.
+\newblock {\em Learning, Media and Technology}, 45(2):107--114.
+
+\bibitem[{World Bank} 2022]{WorldBank2022}
+{World Bank} (2022).
+\newblock Digital government and public sector transformation.
+\newblock Relatório do Banco Mundial sobre transformação digital e setor
+  público.
 
 \end{thebibliography}
