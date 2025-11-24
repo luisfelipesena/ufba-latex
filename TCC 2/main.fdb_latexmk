@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex main"] 1764021930.96685 "main.aux" "main.bbl" "main" 1764021932.28817 0
+["bibtex main"] 1764022364.55298 "main.aux" "main.bbl" "main" 1764022365.73261 0
   "./references.bib" 1764018671.25626 11604 d4c976299932bc4aaa80659bec2fc317 ""
   "./sbc.bst" 1764017842.74414 21863 e2f961827e28074ef5a2bc27ccb7b310 ""
-  "main.aux" 1764021931.98715 7996 e50acce023de9e2813bdb17c206c8de6 "pdflatex"
+  "main.aux" 1764022365.49631 7996 d83a2123ca62ab3d7cd1c74e411ef347 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1764021931.06272 "/Users/luisfelipesena/Development/Personal/ufba-latex/TCC 2/main.tex" "main.pdf" "main" 1764021932.2883 0
-  "/Users/luisfelipesena/Development/Personal/ufba-latex/TCC 2/main.tex" 1764021929.51975 49150 168888089b1f00a72db291750de7a9df ""
+["pdflatex"] 1764022364.65424 "/Users/luisfelipesena/Development/Personal/ufba-latex/TCC 2/main.tex" "main.pdf" "main" 1764022365.73272 0
+  "/Users/luisfelipesena/Development/Personal/ufba-latex/TCC 2/main.tex" 1764022363.26197 49199 d9fb1daabc82ddf83a116d5194f158d9 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/fira/fir_2mfh3o.enc" 1570828436 3443 c184b8b1bd90c3ec5d4289b992e64d96 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/fira/fir_iln36p.enc" 1570828436 3071 cfa92ee28d698dd9275559d9d1c3a233 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc" 1463430686 2679 32dd8ae231bf4a0752b98f62dc097183 ""
@@ -244,10 +244,10 @@
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1743556498 3345730 b0114b64bb79cd284171e12692394348 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
   "aas_macros.sty" 1764013279.60818 4967 cf45ff75f433e372cec5993ac08f4363 ""
-  "main.aux" 1764021931.98715 7996 e50acce023de9e2813bdb17c206c8de6 "pdflatex"
-  "main.bbl" 1764021931.06008 7739 00fb102f893a348505eaf0d0b7cb4243 "bibtex main"
-  "main.out" 1764021931.98799 5132 c94ccb94575e1100a4151102e072bece "pdflatex"
-  "main.tex" 1764021929.51975 49150 168888089b1f00a72db291750de7a9df ""
+  "main.aux" 1764022365.49631 7996 d83a2123ca62ab3d7cd1c74e411ef347 "pdflatex"
+  "main.bbl" 1764022364.65135 7739 00fb102f893a348505eaf0d0b7cb4243 "bibtex main"
+  "main.out" 1764022365.49721 5132 c94ccb94575e1100a4151102e072bece "pdflatex"
+  "main.tex" 1764022363.26197 49199 d9fb1daabc82ddf83a116d5194f158d9 ""
   "sbc2025.cls" 1764013279.70437 14761 c546ee61221e9a80c8e82e624cbd925e ""
   (generated)
   "main.aux"
