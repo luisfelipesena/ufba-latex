@@ -1,0 +1,125 @@
+ROTEIRO DE APRESENTAÇÃO - AMBIENTES VIRTUAIS DE APRENDIZAGEM (15 minutos)
+Análise Crítica da Integração entre Tecnologia, Pedagogia e Prática Educacional
+
+========================================
+PARTE 1 - LUIS FELIPE (Slides 1-5) ~5 min
+========================================
+
+[Slide 1 - Título] (30 seg)
+- "Bom dia. Somos Luis Felipe, Antoniel e João, e apresentaremos uma análise crítica sobre Ambientes Virtuais de Aprendizagem, examinando a integração entre tecnologia, pedagogia e prática educacional."
+
+[Slide 2 - Agenda] (30 seg)
+- "Nossa apresentação está dividida em três partes: primeiro, abordarei os fundamentos dos AVAs; em seguida, Antoniel discutirá as abordagens pedagógicas e o framework TPACK; por fim, João apresentará a análise crítica com benefícios, desafios e nosso framework integrativo."
+
+[Slide 3 - O que são AVAs?] (1 min)
+- "Ambientes Virtuais de Aprendizagem, ou AVAs, são plataformas digitais integradas projetadas para apoiar processos educacionais."
+- "Na literatura internacional, também são conhecidos como LMS (Learning Management Systems) ou VLE (Virtual Learning Environments)."
+- "Sua função principal é gerenciar conteúdos educacionais, viabilizar múltiplas formas de interação entre participantes e organizar atividades de ensino-aprendizagem."
+- "Como vemos no diagrama, um AVA integra quatro dimensões fundamentais: conteúdo, interação, avaliação e colaboração."
+
+[Slide 4 - Dimensões de Interação (Moore)] (1 min)
+- "Moore, em 1989, propôs uma taxonomia fundamental para compreender as interações pedagógicas em ambientes educacionais."
+- "Temos três dimensões principais: a interação professor-aluno, que permite orientação direta e feedback individualizado."
+- "A interação aluno-conteúdo, que oferece acesso a materiais para exploração autônoma."
+- "E a interação aluno-aluno, que viabiliza colaboração entre pares e construção coletiva do conhecimento."
+- "Essas três dimensões são suportadas pelos AVAs modernos através de ferramentas síncronas e assíncronas."
+
+[Slide 5 - Evolução Histórica] (1 min)
+- "A educação a distância precede significativamente a Internet. Já em 1728, há registros de ensino por correspondência postal."
+- "No século XX, rádio e TV educativa expandiram o alcance, mas mantinham limitações de interatividade."
+- "A revolução veio com a Internet nos anos 90, viabilizando sistemas integrados e interativos."
+- "Em 2002, Martin Dougiamas lançou o Moodle sob filosofia construcionista social, tornando-se uma das plataformas mais difundidas globalmente."
+- "A pandemia de COVID-19 em 2020-21 acelerou drasticamente a adoção, tornando os AVAs essenciais para continuidade educacional."
+
+[Slide 6 - Funcionalidades] (1 min)
+- "Os AVAs modernos oferecem funcionalidades integradas em quatro grandes áreas."
+- "Na gestão de conteúdo: estruturação modular de cursos, materiais multimídia e recursos interativos."
+- "Na comunicação: ferramentas assíncronas como fóruns e e-mail, e síncronas como chat e videoconferência."
+- "Na avaliação: quizzes automatizados, rubricas, portfólios e sistemas de learning analytics."
+- "Na colaboração: wikis, glossários compartilhados e projetos em grupo com avaliação entre pares."
+- "Passo agora para Antoniel, que discutirá as abordagens pedagógicas."
+
+========================================
+PARTE 2 - ANTONIEL (Slides 7-10) ~5 min
+========================================
+
+[Slide 7 - Instrucionismo vs Construtivismo] (1.5 min)
+- "A efetividade dos AVAs não é determinada pela tecnologia, mas pelas concepções pedagógicas que orientam seu uso."
+- "Na abordagem instrucionista, o AVA funciona como repositório de conteúdos. O professor transmite conhecimento unidirecionalmente, o estudante é receptor passivo, e o foco está na memorização."
+- "Críticos caracterizam esse uso como 'depósito de PDFs', replicando práticas tradicionais sem explorar o potencial da tecnologia."
+- "Já na abordagem construtivista, o AVA é espaço de mediação e colaboração. O professor é facilitador, o estudante é protagonista, e o foco está na construção ativa do conhecimento."
+- "Como Jonassen destaca: 'A tecnologia per se não determina práticas pedagógicas'. O mesmo AVA pode ser usado de formas radicalmente distintas."
+
+[Slide 8 - Framework TPACK] (1.5 min)
+- "O framework TPACK, proposto por Mishra e Koehler em 2006, oferece uma lente teórica para compreender as competências docentes na era digital."
+- "TPACK significa Conhecimento Tecnológico Pedagógico do Conteúdo, e integra três domínios."
+- "TK, Conhecimento Tecnológico: familiaridade com ferramentas digitais e suas funcionalidades."
+- "PK, Conhecimento Pedagógico: compreensão de teorias de aprendizagem e estratégias instrucionais."
+- "CK, Conhecimento do Conteúdo: domínio profundo da disciplina ensinada."
+- "A efetividade emerge não da soma, mas da integração contextualizada desses três domínios."
+- "Isso implica que a formação docente deve transcender treinamentos puramente técnicos, abordando também dimensões pedagógicas e curriculares."
+
+[Slide 9 - Papéis Transformados] (1 min)
+- "A transição para abordagens construtivistas implica mudanças profundas nos papéis."
+- "O professor transforma-se em mediador: seleciona recursos, projeta experiências de aprendizagem, modera discussões, oferece feedback formativo e cria comunidade de aprendizagem."
+- "O estudante torna-se autorregulado: desenvolve autonomia na gestão do tempo, proatividade na busca de recursos, competências colaborativas e habilidades metacognitivas."
+- "Essa mudança não ocorre automaticamente com a adoção de um AVA. Requer intencionalidade pedagógica e formação adequada."
+
+[Slide 10 - Metodologias Ativas] (1 min)
+- "Metodologias ativas são estratégias fundamentais para superar usos meramente transmissionistas dos AVAs."
+- "A Aprendizagem Baseada em Problemas pode ser implementada através de fóruns e wikis para investigação colaborativa."
+- "A Aprendizagem Colaborativa utiliza ferramentas de coautoria para construção coletiva de artefatos."
+- "A Sala de Aula Invertida combina conteúdo assíncrono no AVA com atividades práticas em momentos síncronos."
+- "A Gamificação incorpora elementos lúdicos: pontos, badges, rankings e desafios. Santos Jr., em 2023, demonstrou que 90% dos participantes reportaram aumento de motivação em AVA gamificado."
+- "Passo agora para João, que apresentará nossa análise crítica."
+
+========================================
+PARTE 3 - JOÃO (Slides 11-16) ~5 min
+========================================
+
+[Slide 11 - Benefícios dos AVAs] (1 min)
+- "Nossa análise identificou benefícios significativos dos AVAs quando orientados por princípios pedagógicos sólidos."
+- "Democratização: rompem barreiras geográficas e temporais, permitindo acesso a estudantes em localidades remotas ou com rotinas incompatíveis com horários fixos."
+- "Personalização: permitem ritmos individuais de aprendizagem, revisitar materiais e escolher trajetórias alinhadas a interesses."
+- "Multimodalidade: integram múltiplas representações do conhecimento através de textos, vídeos, simulações."
+- "Também promovem autonomia, viabilizam comunidades de aprendizagem ampliadas e geram dados valiosos para intervenções através de learning analytics."
+
+[Slide 12 - Desafios e Limitações] (1 min)
+- "Contudo, identificamos desafios substantivos que precisam ser endereçados."
+- "Do lado discente: isolamento e desmotivação pela ausência de interação presencial, dificuldades de autorregulação e taxas de evasão historicamente superiores a cursos presenciais."
+- "Do lado docente: formação insuficiente para atuar em contextos virtuais, resultando em reprodução acrítica de práticas tradicionais."
+- "Estruturalmente: desigualdades digitais que excluem parcelas da população, design instrucional inadequado que gera frustração, e preocupações éticas sobre vigilância e privacidade de dados."
+
+[Slide 13 - Tendências Emergentes] (1 min)
+- "A evolução dos AVAs aponta para tendências promissoras."
+- "Educação híbrida integra atividades presenciais e virtuais de forma planejada, combinando vantagens de ambas modalidades."
+- "Aprendizagem adaptativa utiliza inteligência artificial para personalizar trajetórias automaticamente."
+- "Mobile learning expande oportunidades através de smartphones e tablets, favorecendo microlearning."
+- "Recursos Educacionais Abertos ampliam repositórios disponíveis através de licenciamento aberto."
+- "E o Design Universal para Aprendizagem promove acessibilidade, beneficiando todos os estudantes."
+
+[Slide 14 - Framework Integrativo] (1 min)
+- "Propomos um framework conceitual integrativo que articula três dimensões fundamentais."
+- "A Dimensão Tecnológica compreende infraestrutura, funcionalidades, usabilidade e acessibilidade da plataforma."
+- "A Dimensão Pedagógica abrange concepções de ensino-aprendizagem, estratégias instrucionais, design de atividades e avaliação."
+- "A Dimensão Curricular/Contextual considera objetivos educacionais, perfil do público-alvo, contexto institucional e fatores socioculturais."
+- "A efetividade pedagógica emerge da integração coerente e contextualizada dessas três dimensões."
+- "Tecnologia sofisticada sem pedagogia fundamentada resulta em 'verniz digital' sobre práticas antiquadas. Ambas dimensões desconsiderando o contexto produzem soluções descontextualizadas."
+
+[Slide 15 - Considerações Finais] (30 seg)
+- "Concluímos que os AVAs são infraestruturas sociotécnicas centrais da educação contemporânea."
+- "Sua efetividade não é determinada tecnologicamente, mas socialmente construída através de concepções pedagógicas, competências docentes e condições institucionais."
+- "O desafio contemporâneo é pedagógico, político e ético: como empregar AVAs de maneira que democratizem acesso ao conhecimento, respeitem diversidades e promovam autonomia e pensamento crítico?"
+
+[Slide 16 - Perguntas] (30 seg)
+- "Obrigado pela atenção. Estamos à disposição para perguntas e discussão."
+
+========================================
+DICAS PARA APRESENTAÇÃO:
+========================================
+- Manter ritmo fluido, ~1 min por slide em média
+- Usar os diagramas TikZ nos slides para apoio visual
+- Enfatizar a tensão instrucionismo vs construtivismo como ponto central
+- Referenciar autores principais: Moore, Mishra & Koehler, Jonassen, Garrison
+- Conectar teoria com exemplos práticos (Moodle, pandemia)
+- Ressaltar que tecnologia não determina pedagogia - é a concepção de uso que importa

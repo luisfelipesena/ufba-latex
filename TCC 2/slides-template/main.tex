@@ -1,0 +1,420 @@
+\documentclass[aspectratio=169,xcolor=table]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{csquotes}
+\usepackage{xcolor}
+\usepackage[portuguese]{babel}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows.meta, positioning, fit, calc, mindmap, shadows}
+
+% ------------------------------------------------
+% Tema e Configurações do Beamer
+% ------------------------------------------------
+\usetheme{DCC}
+
+% Ajuste de espaçamento entre itens
+\setbeamertemplate{itemize items}[circle]
+\setbeamertemplate{itemize subitem}[circle]
+\setlength{\itemsep}{0.6em}
+\setlength{\parskip}{0.4em}
+
+\graphicspath{{imgs/}{./imgs/}}
+
+\author[Luis, Antoniel, João]{%
+  \textbf{Luis} \and \textbf{Antoniel} \and \textbf{João}
+}
+\title{Ambientes Virtuais de Aprendizagem}
+\subtitle{Análise Crítica da Integração entre Tecnologia, Pedagogia e Prática Educacional}
+\institute{Universidade Federal da Bahia \\ Instituto de Computação}
+\date{13 de Dezembro de 2025}
+
+\begin{document}
+
+%-------------------------------------------------
+%  SLIDE DE TÍTULO
+%-------------------------------------------------
+\begin{frame}[plain,noframenumbering]
+    \titlepage
+\end{frame}
+
+%-------------------------------------------------
+%  SLIDE DE AGENDA
+%-------------------------------------------------
+\begin{frame}{Agenda}
+    \begin{table}
+        \begin{tabularx}{\textwidth}{|l|X|}
+            \hline
+            \textbf{Tempo} & \textbf{Conteúdo} \\
+            \hline
+            0--5 min  & \textbf{Fundamentos dos AVAs} -- Conceitos, evolução histórica e funcionalidades (Luis Felipe) \\
+            \hline
+            5--10 min & \textbf{Abordagens Pedagógicas} -- Construtivismo vs Instrucionismo, TPACK e metodologias ativas (Antoniel) \\
+            \hline
+            10--15 min & \textbf{Análise Crítica} -- Benefícios, desafios, tendências e framework integrativo (João) \\
+            \hline
+        \end{tabularx}
+    \end{table}
+\end{frame}
+
+\setlength{\parskip}{0.8em}
+
+%=================================================
+\section{Fundamentos dos AVAs}
+%=================================================
+
+\begin{frame}{O que são Ambientes Virtuais de Aprendizagem?}
+    \begin{columns}[T]
+        \begin{column}{0.55\textwidth}
+            \begin{itemize}
+                \item \textbf{Definição:} Plataformas digitais integradas para apoiar processos educacionais
+                \item \textbf{Sinônimos:} LMS (Learning Management System), VLE (Virtual Learning Environment)
+                \item \textbf{Função:} Gerenciar conteúdos, viabilizar interações e organizar atividades de ensino-aprendizagem
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.42\textwidth}
+            \centering
+            \begin{tikzpicture}[scale=0.7, transform shape]
+                \node[draw, rounded corners, fill=blue!20, minimum width=2.5cm, minimum height=0.8cm] (ava) at (0,0) {\textbf{AVA}};
+                \node[draw, rounded corners, fill=green!20, minimum width=2cm, minimum height=0.6cm] (cont) at (-2.5,1.5) {Conteúdo};
+                \node[draw, rounded corners, fill=orange!20, minimum width=2cm, minimum height=0.6cm] (inter) at (2.5,1.5) {Interação};
+                \node[draw, rounded corners, fill=red!20, minimum width=2cm, minimum height=0.6cm] (aval) at (-2.5,-1.5) {Avaliação};
+                \node[draw, rounded corners, fill=purple!20, minimum width=2cm, minimum height=0.6cm] (colab) at (2.5,-1.5) {Colaboração};
+                \draw[->, thick] (ava) -- (cont);
+                \draw[->, thick] (ava) -- (inter);
+                \draw[->, thick] (ava) -- (aval);
+                \draw[->, thick] (ava) -- (colab);
+            \end{tikzpicture}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Dimensões de Interação Pedagógica (Moore, 1989)}
+    \begin{center}
+        \begin{tikzpicture}[scale=0.85, transform shape,
+            box/.style={draw, rounded corners, minimum width=3cm, minimum height=1cm, align=center, font=\small}]
+
+            \node[box, fill=blue!30] (prof) at (0,2) {Professor};
+            \node[box, fill=green!30] (aluno) at (-3,-1) {Aluno};
+            \node[box, fill=orange!30] (conteudo) at (3,-1) {Conteúdo};
+
+            \draw[<->, very thick, blue!60] (prof) -- node[left, font=\scriptsize] {Orientação e Feedback} (aluno);
+            \draw[<->, very thick, green!60] (aluno) -- node[below, font=\scriptsize] {Exploração Autônoma} (conteudo);
+            \draw[<->, very thick, orange!60] (prof) -- node[right, font=\scriptsize] {Design Instrucional} (conteudo);
+
+            \node[box, fill=purple!20, dashed] (aluno2) at (-3,-3) {Aluno};
+            \draw[<->, very thick, purple!60] (aluno) -- node[left, font=\scriptsize] {Colaboração} (aluno2);
+        \end{tikzpicture}
+    \end{center}
+\end{frame}
+
+\begin{frame}{Evolução Histórica da EaD}
+    \begin{center}
+        \begin{tikzpicture}[scale=0.75, transform shape]
+            \draw[thick, ->, >=stealth] (0,0) -- (13,0) node[right] {\small Tempo};
+
+            \foreach \x/\year/\tech/\col in {
+                1/1728/Correio/gray!40,
+                3.5/1920/Rádio/yellow!40,
+                6/1950/TV/orange!40,
+                8.5/1990/Internet/blue!40,
+                11/2002/Moodle/green!40
+            } {
+                \draw[thick] (\x,0.1) -- (\x,-0.1);
+                \node[above, font=\tiny] at (\x,0.2) {\year};
+                \node[draw, rounded corners, fill=\col, below, font=\scriptsize, minimum width=1.2cm] at (\x,-0.5) {\tech};
+            }
+        \end{tikzpicture}
+    \end{center}
+    \vspace{0.3cm}
+    \begin{itemize}
+        \item \textbf{Séc. XIX:} Ensino por correspondência postal
+        \item \textbf{Séc. XX:} Rádio e TV educativa expandem alcance
+        \item \textbf{Anos 90:} Internet viabiliza sistemas integrados
+        \item \textbf{2002:} Moodle -- filosofia construcionista social (Dougiamas)
+        \item \textbf{2020-21:} Pandemia COVID-19 acelera adoção massiva
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Funcionalidades dos AVAs Modernos}
+    \begin{columns}[T]
+        \begin{column}{0.48\textwidth}
+            \textbf{Gestão de Conteúdo}
+            \begin{itemize}
+                \item Estruturação modular
+                \item Materiais multimídia
+                \item Hipertexto e recursos interativos
+            \end{itemize}
+            \vspace{0.5em}
+            \textbf{Comunicação}
+            \begin{itemize}
+                \item Assíncrona: fóruns, e-mail
+                \item Síncrona: chat, videoconferência
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.48\textwidth}
+            \textbf{Avaliação}
+            \begin{itemize}
+                \item Quizzes automatizados
+                \item Rubricas e portfólios
+                \item Learning Analytics
+            \end{itemize}
+            \vspace{0.5em}
+            \textbf{Colaboração}
+            \begin{itemize}
+                \item Wikis e glossários
+                \item Projetos em grupo
+                \item Avaliação entre pares
+            \end{itemize}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+%=================================================
+\section{Abordagens Pedagógicas}
+%=================================================
+
+\begin{frame}{Instrucionismo vs Construtivismo}
+    \begin{columns}[T]
+        \begin{column}{0.48\textwidth}
+            \textbf{\textcolor{red!70}{Instrucionismo}}
+            \begin{itemize}
+                \item AVA como repositório de conteúdo
+                \item Professor transmite conhecimento
+                \item Estudante é receptor passivo
+                \item Foco em memorização
+                \item ``Depósito de PDFs''
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.48\textwidth}
+            \textbf{\textcolor{green!70!black}{Construtivismo}}
+            \begin{itemize}
+                \item AVA como espaço de mediação
+                \item Professor é facilitador
+                \item Estudante é protagonista
+                \item Foco em construção ativa
+                \item Colaboração e reflexão
+            \end{itemize}
+        \end{column}
+    \end{columns}
+    \vspace{0.5cm}
+    \centering
+    \textit{``A tecnologia per se não determina práticas pedagógicas'' (Jonassen, 1999)}
+\end{frame}
+
+\begin{frame}{Framework TPACK (Mishra \& Koehler, 2006)}
+    \begin{columns}[T]
+        \begin{column}{0.45\textwidth}
+            \begin{center}
+                \begin{tikzpicture}[scale=0.65, transform shape]
+                    % Circles
+                    \fill[blue!20, opacity=0.7] (0,0) circle (2cm);
+                    \fill[red!20, opacity=0.7] (1.5,0) circle (2cm);
+                    \fill[green!20, opacity=0.7] (0.75,1.3) circle (2cm);
+
+                    % Labels
+                    \node[font=\scriptsize] at (-1,0) {TK};
+                    \node[font=\scriptsize] at (2.5,0) {PK};
+                    \node[font=\scriptsize] at (0.75,2.5) {CK};
+                    \node[font=\scriptsize\bfseries] at (0.75,0.5) {TPACK};
+                \end{tikzpicture}
+            \end{center}
+        \end{column}
+        \begin{column}{0.52\textwidth}
+            \begin{itemize}
+                \item \textbf{TK:} Conhecimento Tecnológico
+                \item \textbf{PK:} Conhecimento Pedagógico
+                \item \textbf{CK:} Conhecimento do Conteúdo
+                \item \textbf{TPACK:} Integração contextualizada dos três domínios
+            \end{itemize}
+            \vspace{0.3cm}
+            \small
+            Formação docente deve transcender treinamentos puramente técnicos
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Papéis Transformados}
+    \begin{columns}[T]
+        \begin{column}{0.48\textwidth}
+            \textbf{Professor como Mediador}
+            \begin{itemize}
+                \item Seleciona e organiza recursos
+                \item Projeta experiências de aprendizagem
+                \item Modera discussões online
+                \item Oferece feedback formativo
+                \item Cria comunidade de aprendizagem
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.48\textwidth}
+            \textbf{Estudante Autorregulado}
+            \begin{itemize}
+                \item Autonomia na gestão do tempo
+                \item Proatividade na busca de recursos
+                \item Competências colaborativas
+                \item Habilidades metacognitivas
+                \item Protagonismo na aprendizagem
+            \end{itemize}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Metodologias Ativas em AVAs}
+    \begin{center}
+        \begin{tikzpicture}[scale=0.8, transform shape,
+            metodbox/.style={draw, rounded corners, minimum width=2.8cm, minimum height=1cm, align=center, font=\scriptsize}]
+
+            \node[metodbox, fill=blue!25] (pbl) at (0,0) {\textbf{PBL}\\Aprendizagem\\Baseada em\\Problemas};
+            \node[metodbox, fill=green!25] (colab) at (4,0) {\textbf{Colaborativa}\\Wikis, Fóruns\\Projetos em\\Grupo};
+            \node[metodbox, fill=orange!25] (flip) at (8,0) {\textbf{Sala Invertida}\\Conteúdo em\\Casa, Prática\\Presencial};
+            \node[metodbox, fill=purple!25] (gam) at (4,-2.5) {\textbf{Gamificação}\\Pontos, Badges\\Rankings\\Desafios};
+        \end{tikzpicture}
+    \end{center}
+    \vspace{0.3cm}
+    \small
+    \textbf{Santos Jr. (2023):} 90\% dos participantes reportaram aumento de motivação com gamificação em AVA
+\end{frame}
+
+%=================================================
+\section{Análise Crítica}
+%=================================================
+
+\begin{frame}{Benefícios dos AVAs}
+    \begin{columns}[T]
+        \begin{column}{0.48\textwidth}
+            \begin{itemize}
+                \item \textbf{Democratização:} Rompe barreiras geográficas e temporais
+                \item \textbf{Personalização:} Ritmos individuais de aprendizagem
+                \item \textbf{Multimodalidade:} Múltiplas representações do conhecimento
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.48\textwidth}
+            \begin{itemize}
+                \item \textbf{Autonomia:} Desenvolvimento de autorregulação
+                \item \textbf{Comunidades:} Interação entre contextos diversos
+                \item \textbf{Analytics:} Dados para intervenções personalizadas
+            \end{itemize}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Desafios e Limitações}
+    \begin{columns}[T]
+        \begin{column}{0.48\textwidth}
+            \textbf{Aspectos Discentes}
+            \begin{itemize}
+                \item Isolamento e desmotivação
+                \item Dificuldades de autorregulação
+                \item Taxas de evasão elevadas
+            \end{itemize}
+            \vspace{0.5em}
+            \textbf{Aspectos Docentes}
+            \begin{itemize}
+                \item Formação insuficiente
+                \item Reprodução de práticas tradicionais
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.48\textwidth}
+            \textbf{Aspectos Estruturais}
+            \begin{itemize}
+                \item Desigualdades digitais
+                \item Design instrucional inadequado
+                \item Vigilância e controle excessivo
+            \end{itemize}
+            \vspace{0.5em}
+            \textbf{Aspectos Éticos}
+            \begin{itemize}
+                \item Privacidade de dados
+                \item Exclusão digital
+            \end{itemize}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Tendências Emergentes}
+    \begin{center}
+        \begin{tikzpicture}[scale=0.75, transform shape,
+            trendbox/.style={draw, rounded corners, minimum width=2.5cm, minimum height=0.9cm, align=center, font=\scriptsize, drop shadow}]
+
+            \node[trendbox, fill=blue!30] (hibrida) at (0,1.5) {\textbf{Educação}\\Híbrida};
+            \node[trendbox, fill=green!30] (adapt) at (4,1.5) {\textbf{Aprendizagem}\\Adaptativa};
+            \node[trendbox, fill=orange!30] (ia) at (8,1.5) {\textbf{Inteligência}\\Artificial};
+            \node[trendbox, fill=purple!30] (mob) at (2,-0.5) {\textbf{Mobile}\\Learning};
+            \node[trendbox, fill=red!30] (rea) at (6,-0.5) {\textbf{REA}\\Recursos Abertos};
+            \node[trendbox, fill=cyan!30] (udl) at (4,-2.5) {\textbf{Design}\\Universal (UDL)};
+        \end{tikzpicture}
+    \end{center}
+\end{frame}
+
+\begin{frame}{Framework Conceitual Integrativo}
+    \begin{center}
+        \begin{tikzpicture}[scale=0.8, transform shape]
+            % Three dimensions
+            \node[draw, rounded corners, fill=blue!25, minimum width=3cm, minimum height=1.5cm, align=center] (tech) at (0,0) {\textbf{Dimensão}\\Tecnológica};
+            \node[draw, rounded corners, fill=green!25, minimum width=3cm, minimum height=1.5cm, align=center] (ped) at (5,0) {\textbf{Dimensão}\\Pedagógica};
+            \node[draw, rounded corners, fill=orange!25, minimum width=3cm, minimum height=1.5cm, align=center] (curr) at (2.5,-3) {\textbf{Dimensão}\\Curricular/Contextual};
+
+            % Central node
+            \node[draw, circle, fill=purple!30, minimum size=1.5cm, align=center, font=\small\bfseries] (efet) at (2.5,-1) {Efetividade\\Pedagógica};
+
+            % Arrows
+            \draw[->, thick] (tech) -- (efet);
+            \draw[->, thick] (ped) -- (efet);
+            \draw[->, thick] (curr) -- (efet);
+        \end{tikzpicture}
+    \end{center}
+    \vspace{0.3cm}
+    \small
+    \centering
+    A efetividade emerge da \textbf{integração coerente e contextualizada} das três dimensões
+\end{frame}
+
+\begin{frame}{Considerações Finais}
+    \begin{itemize}
+        \item AVAs são infraestruturas \textbf{sociotécnicas} centrais da educação contemporânea
+        \item Efetividade não é determinada tecnologicamente, mas \textbf{socialmente construída}
+        \item O desafio é \textbf{pedagógico, político e ético}, não apenas tecnológico
+        \item Necessidade de articulação fundamentada entre \textbf{tecnologia, pedagogia e currículo}
+    \end{itemize}
+    \vspace{0.5cm}
+    \centering
+    \textit{``Como empregar AVAs de maneira que democratizem acesso ao conhecimento,\\ respeitem diversidades e promovam autonomia e pensamento crítico?''}
+\end{frame}
+
+%=================================================
+\section{Referências}
+%=================================================
+
+\begin{frame}{Referências Principais}
+    \tiny
+    \begin{itemize}
+        \item Moore, M. G. (1989). Three types of interaction. \textit{American Journal of Distance Education}, 3(2), 1-7.
+        \item Garrison, D. R. (2016). \textit{E-Learning in the 21st Century}. Routledge.
+        \item Mishra, P. \& Koehler, M. J. (2006). Technological Pedagogical Content Knowledge. \textit{Teachers College Record}, 108(6), 1017-1054.
+        \item Jonassen, D. H. (1999). Designing constructivist learning environments. \textit{Instructional-design theories and models}. Erlbaum.
+        \item Bates, A. W. (2015). \textit{Teaching in a Digital Age}. BCcampus.
+        \item Dougiamas, M. (2003). Moodle: Using Learning Communities to Create an Open Source CMS. \textit{EdMedia Conference}.
+        \item Hodges, C. et al. (2020). The Difference Between Emergency Remote Teaching and Online Learning. \textit{EDUCAUSE Review}.
+    \end{itemize}
+\end{frame}
+
+%=================================================
+\section{Encerramento}
+%=================================================
+\begin{frame}{Perguntas?}
+    \begin{center}
+        \Huge Obrigado!
+        \vspace{1cm}
+
+        \normalsize
+        \textbf{Luis Felipe Sena} -- luis.sena@ufba.br\\
+        \textbf{Antoniel Magalhães} -- antoniels@ufba.br\\
+        \textbf{João Leahy} -- joao.leahy@ufba.br
+    \end{center}
+\end{frame}
+
+\end{document}
